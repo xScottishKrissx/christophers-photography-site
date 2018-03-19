@@ -1,0 +1,182 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+
+//Fonts
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+//*{border: 1px solid black;}
+body{
+  background-color: grey;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Raleway",sans-serif;
+}
+p{font-family: "Lato", sans-serif;}
+
+.wrapper{
+
+  background-color: $white;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+  .normal-nav{
+    display: none;
+    margin: 0;
+  }
+
+  .slider-area-wrapper{
+    margin: 0;
+  }
+
+  .gallery-link-area-wrapper{
+    margin: 0;
+    .gallery-links-container{
+      .gallery-link{
+        width: 150px;
+        height: 150px;
+        background-color: red;
+      }
+    }
+
+    .sidebar-2{
+      h1{
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Mobile Nav
+.nav-wrapper{
+
+  color: black;
+  height: 10rem;
+  left: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .col{
+    cursor: pointer;
+    .showNavIcon{
+
+        font-size: 3rem;
+        float: left;
+        line-height: 5rem;
+    }
+  }
+}
+
+
+input[type=checkbox] {
+  //height: 200px;
+
+   left: 0;
+   opacity: 0;
+   position: absolute;
+   top: 0;
+   width: 100vw;
+   //z-index: 100000;
+   /* For mobile, it's typically better to position checkbox on
+      top of clickable  area and turn opacity to 0 instead. */
+}
+#showNavLabel{
+    //background-color: red;
+    color: black;
+    height: 100px;
+    left: 0;
+    position: fixed;
+    min-width: 208px;
+    width: 100%;
+    z-index: 100001;
+}
+.navBar {
+   background: black;
+   color: black;
+   height: 100%;
+   left: -100%;
+   //line-height: 100px;
+   position: fixed;
+   top:0;
+   transition: left 1s;
+   width: 50vw;
+     max-width: 500px;
+     min-width: 208px;
+   z-index: 10000;
+
+   transition: left 0.2s;
+ }
+
+input[type=checkbox]:checked ~ .nav-wrapper .navBar {
+    background: black;
+    color: yellow;
+    top:0;
+    left: 0;
+}
+
+input[type=checkbox]:checked ~ #showNavLabel{
+  opacity: 2.0;
+  z-index: 0;
+  .col{background-color: green;}
+}
+
+
+
+
+
+
+//Media Queries
+@import "_media-queries.scss";

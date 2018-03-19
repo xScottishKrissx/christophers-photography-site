@@ -1,0 +1,14 @@
+
+@media only screen and (min-width: $breakpoint-tablet) {
+
+  .mobile-nav{
+    display: none;
+  }
+
+
+  .wrapper{
+    .normal-nav{
+      display: block;
+    }
+  }
+}
