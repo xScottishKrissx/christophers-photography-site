@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway'); //*{border: 1px solid black;}
 
 body {
-  background-color: grey;
+  //background-color: grey;
 }
 
 h1,
@@ -77,8 +77,10 @@ p {
   }
 
   .slider-area-wrapper {
+    //height: 500px;
     margin: 0;
     margin-bottom: $standard-seperation;
+
 
     .slider {
       padding: 0;
@@ -102,7 +104,7 @@ p {
       @include background-image-cover;
       height: 100vh;
       min-height: 400px;
-      max-height: 600px;
+      max-height: 500px;
       transition: -webkit-transform 0.5s ease;
       transition: transform 0.5s ease;
       transition: transform 0.5s ease, -webkit-transform 0.5s ease;
@@ -155,27 +157,51 @@ p {
   }
 
   .sidebar-1 {
-    background-color: red;
+    background-color: $standard-grey;
+    color:$white;
+    font-size: 1.1rem;
 
     .sidebar-content {
       padding: 1rem;
     }
   }
-
+/////////////////////// GALLERY /////////////////////////////////
   .gallery-link-area-wrapper {
     margin: 0;
     margin-bottom: $standard-seperation;
 
     .gallery-links-container {
       .gallery-link {
+        background-color: $pink;
+        border-left:$gallery-border;
+        box-shadow: 0px -2px 0px 0px $white;
+        color:$white;
+        //padding-left: 0;
+        padding-top: $standard-seperation;
         width: 150px;
-        height: 150px;
-        background-color: red;
+        //height: 150px;
+
+        transition: background-color .5s linear;
+        &:hover{
+          background-color: #d6d6d6;
+          cursor: pointer;
+        }
+
+        div{
+          @include background-image-contain;
+          background-image: url("/assets/1.jpg");
+          height: 275px;
+          max-height: 100%;
+        }
       }
+
+
     }
 
     .sidebar-2 {
-      background-color: black;
+      background-color: $standard-grey;
+      border-left: $gallery-border;
+      color: $white;
 
       .sidebar-content {
         padding: 1rem;
@@ -267,8 +293,8 @@ input[type=checkbox]:checked ~ #showNavLabel {
 
 ////////////// FOOTER /////////////////////
 .footer{
-  background-color: purple;
-  color: white;
+  background-color: $standard-grey;
+  color: $white;
   padding: 1rem;
   width: 100%;
 }

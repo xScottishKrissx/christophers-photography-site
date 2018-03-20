@@ -1,0 +1,35 @@
+.wrapper .page-header {
+  background-color: #323b44;
+  padding-top: 5rem; }
+  .wrapper .page-header .row div {
+    color: white; }
+.wrapper .page-gallery {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  .wrapper .page-gallery .row {
+    margin: 0; }
+    .wrapper .page-gallery .row div {
+      background-color: green;
+      outline: 2px solid white;
+      height: 300px; }
+
+@media only screen and (min-width: 768px) {
+  .mobile-nav {
+    display: none; }
+
+  .wrapper .normal-nav {
+    display: flex; } }
+@media only screen and (min-width: 992px) {
+  .wrapper .slider-area-wrapper {
+    height: 500px; } }
+@media only screen and (min-width: 1366px) {
+  .wrapper {
+    max-width: 1300px; } }
+@media only screen and (min-width: 1920px) {
+  .wrapper {
+    max-width: 1800px; } }
+@media only screen and (min-width: 2560px) {
+  .wrapper {
+    max-width: 2300px; } }
+
+/*# sourceMappingURL=gallery-page-styles.css.map */

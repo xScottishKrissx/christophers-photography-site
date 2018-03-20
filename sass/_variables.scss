@@ -4,6 +4,9 @@ $breakpoint-tablet: 768px;
 
 
 $white: white;
+$standard-grey: #323b44;
+$orange: #ffc522;
+$pink: #ff2222e0;
 
 
 //Design Elements
@@ -13,3 +16,7 @@ $white: white;
 
   //header
   $navbar-background: rgba(0, 0, 0, 0.5);
+
+
+  //Gallery
+  $gallery-border:2px solid $white;

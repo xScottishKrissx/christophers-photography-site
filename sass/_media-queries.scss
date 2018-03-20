@@ -12,3 +12,27 @@
     }
   }
 }
+
+@media only screen and(min-width:992px) {
+  .wrapper .slider-area-wrapper{
+    height: 500px;
+  }
+}
+
+@media only screen and(min-width:1366px) {
+    .wrapper{
+      max-width: 1300px;
+    }
+}
+
+@media only screen and(min-width:1920px) {
+    .wrapper{
+      max-width: 1800px;
+    }
+}
+
+@media only screen and(min-width:2560px) {
+    .wrapper{
+      max-width: 2300px;
+    }
+}

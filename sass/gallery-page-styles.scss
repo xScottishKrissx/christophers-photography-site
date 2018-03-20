@@ -1,0 +1,33 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+
+.wrapper{
+  .page-header{
+    background-color: $standard-grey;
+    //padding-left: 6rem;
+    padding-top: 5rem;
+    .row{
+      div{
+        color: $white;
+      }
+    }
+  }
+
+
+
+  .page-gallery{
+    margin-top: $standard-seperation;
+    margin-bottom: $standard-seperation;
+    .row{
+      margin: 0;
+      div{
+        background-color: green;
+        outline: $gallery-border;
+        height: 300px;
+      }
+    }
+  }
+}
+
+
+@import "_media-queries.scss";

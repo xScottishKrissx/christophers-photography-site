@@ -1,8 +1,5 @@
 @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
 @import url("https://fonts.googleapis.com/css?family=Lato|Raleway");
-body {
-  background-color: grey; }
-
 h1,
 h2,
 h3,
@@ -68,6 +65,10 @@ p {
               transition: box-shadow .1s linear; }
               .wrapper .normal-nav .normal-nav-container .navbar div ul li a:hover {
                 box-shadow: 0px 2px 0px 0px; }
+              .wrapper .normal-nav .normal-nav-container .navbar div ul li a:active {
+                box-shadow: 0px 2px 0px 0px;
+                background-color: #323b44;
+                color: white; }
   .wrapper .slider-area-wrapper {
     margin: 0;
     margin-bottom: 1rem; }
@@ -87,7 +88,7 @@ p {
       background-size: cover;
       height: 100vh;
       min-height: 400px;
-      max-height: 600px;
+      max-height: 500px;
       transition: -webkit-transform 0.5s ease;
       transition: transform 0.5s ease;
       transition: transform 0.5s ease, -webkit-transform 0.5s ease;
@@ -118,18 +119,36 @@ p {
     .wrapper .slider-area-wrapper .slider-image-3 {
       background-image: url("/assets/1.jpg"); }
   .wrapper .sidebar-1 {
-    background-color: red; }
+    background-color: #323b44;
+    color: white;
+    font-size: 1.1rem; }
     .wrapper .sidebar-1 .sidebar-content {
       padding: 1rem; }
   .wrapper .gallery-link-area-wrapper {
     margin: 0;
     margin-bottom: 1rem; }
     .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link {
+      background-color: #ff2222e0;
+      border-left: 2px solid white;
+      box-shadow: 0px -2px 0px 0px white;
+      color: white;
+      padding-top: 1rem;
       width: 150px;
-      height: 150px;
-      background-color: red; }
+      transition: background-color .5s linear; }
+      .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link:hover {
+        background-color: #d6d6d6;
+        cursor: pointer; }
+      .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link div {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("/assets/1.jpg");
+        height: 275px;
+        max-height: 100%; }
     .wrapper .gallery-link-area-wrapper .sidebar-2 {
-      background-color: black; }
+      background-color: #323b44;
+      border-left: 2px solid white;
+      color: white; }
       .wrapper .gallery-link-area-wrapper .sidebar-2 .sidebar-content {
         padding: 1rem; }
 
@@ -193,7 +212,7 @@ input[type=checkbox]:checked ~ #showNavLabel {
   opacity: 2.0; }
 
 .footer {
-  background-color: purple;
+  background-color: #323b44;
   color: white;
   padding: 1rem;
   width: 100%; }
@@ -204,5 +223,17 @@ input[type=checkbox]:checked ~ #showNavLabel {
 
   .wrapper .normal-nav {
     display: flex; } }
+@media only screen and (min-width: 992px) {
+  .wrapper .slider-area-wrapper {
+    height: 500px; } }
+@media only screen and (min-width: 1366px) {
+  .wrapper {
+    max-width: 1300px; } }
+@media only screen and (min-width: 1920px) {
+  .wrapper {
+    max-width: 1800px; } }
+@media only screen and (min-width: 2560px) {
+  .wrapper {
+    max-width: 2300px; } }
 
 /*# sourceMappingURL=styles.css.map */
