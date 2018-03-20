@@ -8,9 +8,9 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="//netdna.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/styles.css">
-  <title>Hello, world!</title>
+  <title>CPS</title>
 </head>
 <!-- Start server on Port:4000 ctrl+alt4 , stop server ctrl+alt+q -->
 
@@ -56,90 +56,215 @@
     </div>
 
 
-
-
-
+    <!--------------------------- Normal Nav ------------------------------------>
     <div class="normal-nav row">
 
-      <div class="col ">
-        <h1>Column-1</h1>
+      <div class="col-md-4 col-lg-6 ">
+        <h1>christophers photography site</h1>
       </div>
-      <div class="col ">
-        <h1>column-2</h1>
+      <div class="col-md-8 col-lg-6 normal-nav-container">
+
+        <nav class="navbar navbar-expand-md">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#normal-nav" aria-controls="normal-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="normal-nav">
+            <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Automotive</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="#">Out &amp; About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="#">Wildlife</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="#">Videogames</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </nav>
       </div>
     </div>
-
+    <!--------------------------- Slider ------------------------------------>
     <div class="slider-area-wrapper row">
       <div class="col-12 col-lg-9 slider">
-        <h1>Slider</h1>
+        <div id="myCarousel" class="carousel slide" data-interval="0" data-ride="carousel">
+
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active slider-image-1">
+              <div class="container">
+                <div class="carousel-caption text-left">
+                  <h1>Example headline.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item  slider-image-2">
+              <div class="container">
+                <div class="carousel-caption text-left">
+                  <h1>Example headline.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item  slider-image-3">
+              <div class="container">
+                <div class="carousel-caption text-left">
+                  <h1>Example headline.</h1>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
+
+      <!--------------------------- sidebar-1 ------------------------------------>
       <div class="col-12 sidebar-1 col-lg-3">
         <h1>Sidebar 1</h1>
+        <div class="sidebar-content">
+          <h2>Header</h2>
+          <p>Sint proident elit anim dolore dolor aliquip magna do adipisicing sint exercitation proident.</p>
+          <h4>Posted: whenever</h4>
+        </div>
+
+        <div class="sidebar-content">
+          <h2>Header</h2>
+          <p>Velit veniam in exercitation velit culpa id excepteur excepteur.</p>
+          <h4>Posted: whenever</h4>
+        </div>
+
+        <div class="sidebar-content">
+          <h2>Header</h2>
+          <p>Aliquip laboris est fugiat sit aliqua eiusmod incididunt aliquip incididunt labore ut consequat non anim proident sit.</p>
+          <h4>Posted: whenever</h4>
+        </div>
+
+        <button type="button" class="sidebar-btn" name="button">See more...</button>
       </div>
     </div>
 
+    <!--------------------------- Gallery ------------------------------------>
     <div class="gallery-link-area-wrapper row">
 
       <div class="gallery-links-container col-lg-9">
 
-      <div class="row">
+        <div class="row">
 
-        <div class="gallery-link col-12 col-sm-6 col-md-4">
-          <h1>Link</h1>
+          <div class="gallery-link col-12 col-sm-6 col-md-4">
+            <h1>Link</h1>
+          </div>
+
+          <div class="gallery-link col-12 col-sm-6 col-md-4">
+            <h1>Link</h1>
+          </div>
+
+          <div class="gallery-link col-12 col-sm-6 col-md-4">
+            <h1>Link</h1>
+          </div>
+
+
+          <div class="gallery-link col-12 col-sm-6 col-md-4">
+            <h1>Link</h1>
+          </div>
+
+          <div class="gallery-link col-12 col-sm-6 col-md-4">
+            <h1>Link</h1>
+          </div>
+
+          <div class="gallery-link col-12 col-sm-6 col-md-4">
+            <h1>Link</h1>
+          </div>
+
+
+          <div class="gallery-link col-12 col-sm-6 col-md-4">
+            <h1>Link</h1>
+          </div>
+
+          <div class="gallery-link col-12 col-sm-6 col-md-4">
+            <h1>Link</h1>
+          </div>
+
+          <div class="gallery-link col-12 col-sm-6 col-md-4">
+            <h1>Link</h1>
+          </div>
         </div>
-
-        <div class="gallery-link col-12 col-sm-6 col-md-4">
-          <h1>Link</h1>
-        </div>
-
-        <div class="gallery-link col-12 col-sm-6 col-md-4">
-          <h1>Link</h1>
-        </div>
+        <!-------------------------End of Gallery------------------------------------------->
 
 
-        <div class="gallery-link col-12 col-sm-6 col-md-4">
-          <h1>Link</h1>
-        </div>
-
-        <div class="gallery-link col-12 col-sm-6 col-md-4">
-          <h1>Link</h1>
-        </div>
-
-        <div class="gallery-link col-12 col-sm-6 col-md-4">
-          <h1>Link</h1>
-        </div>
 
 
-        <div class="gallery-link col-12 col-sm-6 col-md-4">
-          <h1>Link</h1>
-        </div>
 
-        <div class="gallery-link col-12 col-sm-6 col-md-4">
-          <h1>Link</h1>
-        </div>
-
-        <div class="gallery-link col-12 col-sm-6 col-md-4">
-          <h1>Link</h1>
-        </div>
       </div>
-
-
-
-      </div>
+      <!--------------------------- Side-Bar-2 ------------------------------------>
       <div class="col-lg-3 sidebar-2">
-        <h1>Side-Bar-2</h1>
+        <h1>Sidebar 1</h1>
+        <div class="sidebar-content">
+          <h2>Header</h2>
+          <p>Sint proident elit anim dolore dolor aliquip magna do adipisicing sint exercitation proident.</p>
+          <h4>Posted: whenever</h4>
+        </div>
+        <div class="sidebar-content">
+          <h2>Header</h2>
+          <p>Sint proident elit anim dolore dolor aliquip magna do adipisicing sint exercitation proident.</p>
+          <h4>Posted: whenever</h4>
+        </div>
+        <div class="sidebar-content">
+          <h2>Header</h2>
+          <p>Sint proident elit anim dolore dolor aliquip magna do adipisicing sint exercitation proident.</p>
+          <h4>Posted: whenever</h4>
+        </div>
       </div>
 
 
     </div>
 
+    <!--------------------------- Footer ------------------------------------>
+    <div class="footer">
+      <h1>Footer</h1>
+    </div>
 
-<div class="footer">
-  <h1>Footer</h1>
-</div>
 
-
-</div>
+  </div>
 
 
 
