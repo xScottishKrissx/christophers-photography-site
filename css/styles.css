@@ -160,12 +160,10 @@ input[type=checkbox] {
       top of clickable  area and turn opacity to 0 instead. */ }
 
 #showNavLabel {
-  color: black;
-  height: 100px;
+  color: white;
+  font-size: 5rem;
   left: 0;
   position: fixed;
-  min-width: 208px;
-  width: 100%;
   z-index: 100001; }
 
 .navBar {
@@ -181,18 +179,18 @@ input[type=checkbox] {
   min-width: 208px;
   z-index: 10000;
   transition: left 0.2s; }
+  .navBar .col {
+    padding-top: 7rem; }
 
 input[type=checkbox]:checked ~ .nav-wrapper .navBar {
   background: black;
   color: yellow;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: 100000; }
 
 input[type=checkbox]:checked ~ #showNavLabel {
-  opacity: 2.0;
-  z-index: 0; }
-  input[type=checkbox]:checked ~ #showNavLabel .col {
-    background-color: green; }
+  opacity: 2.0; }
 
 .footer {
   background-color: purple;
