@@ -24,26 +24,53 @@ p {
   padding-left: 10px;
   padding-right: 10px; }
   .wrapper .normal-nav {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/header.jpg");
+    background-position: bottom;
     display: none;
-    margin: 0; }
+    height: 40vh;
+    margin: 0;
+    margin-bottom: 1rem; }
+    .wrapper .normal-nav .brand {
+      padding: 0; }
+      .wrapper .normal-nav .brand .title {
+        background-color: rgba(0, 0, 0, 0.5);
+        bottom: 0;
+        min-height: 100px;
+        position: absolute;
+        width: 100%;
+        margin: 0; }
+        .wrapper .normal-nav .brand .title h1 {
+          color: white;
+          margin: 0;
+          padding: 3rem 0 0 3rem;
+          position: absolute; }
     .wrapper .normal-nav .normal-nav-container {
       padding-top: 3.5rem; }
-      .wrapper .normal-nav .normal-nav-container .navbar div ul {
+      .wrapper .normal-nav .normal-nav-container .navbar {
+        background-color: rgba(0, 0, 0, 0.5);
+        bottom: 0;
+        min-height: 100px;
         position: absolute;
+        width: 100%;
         right: 0; }
-        .wrapper .normal-nav .normal-nav-container .navbar div ul li {
-          padding-left: 1.5rem; }
-          .wrapper .normal-nav .normal-nav-container .navbar div ul li a {
-            color: red;
-            transition: color 3s;
-            box-shadow: 0px 0px 0px 0px white;
-            transition: box-shadow .1s linear; }
-            .wrapper .normal-nav .normal-nav-container .navbar div ul li a:hover {
-              box-shadow: 0px 2px 0px 0px blue;
-              color: blue; }
+        .wrapper .normal-nav .normal-nav-container .navbar div ul {
+          position: absolute; }
+          .wrapper .normal-nav .normal-nav-container .navbar div ul li {
+            padding-left: 1.5rem; }
+            .wrapper .normal-nav .normal-nav-container .navbar div ul li a {
+              box-shadow: 0px 0px 0px 0px white;
+              color: white;
+              font-size: 1.5rem;
+              transition: color 3s;
+              transition: box-shadow .1s linear; }
+              .wrapper .normal-nav .normal-nav-container .navbar div ul li a:hover {
+                box-shadow: 0px 2px 0px 0px; }
   .wrapper .slider-area-wrapper {
     margin: 0;
-    padding-bottom: 2rem; }
+    margin-bottom: 1rem; }
     .wrapper .slider-area-wrapper .slider {
       padding: 0; }
       .wrapper .slider-area-wrapper .slider .col {
@@ -95,7 +122,8 @@ p {
     .wrapper .sidebar-1 .sidebar-content {
       padding: 1rem; }
   .wrapper .gallery-link-area-wrapper {
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 1rem; }
     .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link {
       width: 150px;
       height: 150px;
@@ -165,6 +193,12 @@ input[type=checkbox]:checked ~ #showNavLabel {
   z-index: 0; }
   input[type=checkbox]:checked ~ #showNavLabel .col {
     background-color: green; }
+
+.footer {
+  background-color: purple;
+  color: white;
+  padding: 1rem;
+  width: 100%; }
 
 @media only screen and (min-width: 768px) {
   .mobile-nav {

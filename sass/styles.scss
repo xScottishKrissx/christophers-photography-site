@@ -31,18 +31,41 @@ p {
   padding-right: 10px;
 
   .normal-nav {
+    @include background-image-contain;
+    background-image: url("/assets/header.jpg");
+    background-position: bottom;
     display: none;
+    height: 40vh;
     margin: 0;
+    margin-bottom: $standard-seperation;
+
+    .brand {
+      padding: 0;
+
+      .title {
+        @include header-styles;
+        margin: 0;
+
+        h1 {
+          color: $white;
+          margin: 0;
+          padding: 3rem 0 0 3rem;
+          position: absolute;
+        }
+      }
+    }
 
     .normal-nav-container {
       padding-top: 3.5rem;
 
       .navbar {
+        @include header-styles;
+        right: 0;
+
         div {
           ul {
             position: absolute;
-            right: 0;
-
+            //right: 0;
             li {
               padding-left: 1.5rem;
               @include default-nav-link-styles;
@@ -55,7 +78,7 @@ p {
 
   .slider-area-wrapper {
     margin: 0;
-    padding-bottom: 2rem;
+    margin-bottom: $standard-seperation;
 
     .slider {
       padding: 0;
@@ -131,15 +154,17 @@ p {
     }
   }
 
-  .sidebar-1{
+  .sidebar-1 {
     background-color: red;
-    .sidebar-content{
+
+    .sidebar-content {
       padding: 1rem;
     }
   }
 
   .gallery-link-area-wrapper {
     margin: 0;
+    margin-bottom: $standard-seperation;
 
     .gallery-links-container {
       .gallery-link {
@@ -151,32 +176,14 @@ p {
 
     .sidebar-2 {
       background-color: black;
-      .sidebar-content{
+
+      .sidebar-content {
         padding: 1rem;
       }
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Mobile Nav
-
 .nav-wrapper {
   color: black;
   height: 10rem;
@@ -253,5 +260,19 @@ input[type=checkbox]:checked ~ #showNavLabel {
     background-color: green;
   }
 }
+
+////////////// FOOTER /////////////////////
+.footer{
+  background-color: purple;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+}
+
+
+
+
+
+
 //Media Queries
 @import "_media-queries.scss";

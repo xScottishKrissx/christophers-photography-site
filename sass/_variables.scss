@@ -4,3 +4,12 @@ $breakpoint-tablet: 768px;
 
 
 $white: white;
+
+
+//Design Elements
+  //Used to seperate each section of the website
+  //Should be used with margin-bottom
+  $standard-seperation: 1rem;
+
+  //header
+  $navbar-background: rgba(0, 0, 0, 0.5);
