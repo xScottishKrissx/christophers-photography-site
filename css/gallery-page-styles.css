@@ -19,12 +19,19 @@
 
   .wrapper .normal-nav {
     display: flex; } }
+@media only screen and (max-width: 991px) {
+  .wrapper .slider-area-wrapper div {
+    margin-bottom: 0.5rem; }
+  .wrapper .gallery-link-area-wrapper .gallery-links-container {
+    margin-bottom: 1rem; } }
 @media only screen and (min-width: 992px) {
   .wrapper .slider-area-wrapper {
     height: 500px; } }
 @media only screen and (min-width: 1366px) {
   .wrapper {
-    max-width: 1300px; } }
+    max-width: 1300px; }
+    .wrapper .normal-nav .normal-nav-container .navbar div ul {
+      right: 3rem; } }
 @media only screen and (min-width: 1920px) {
   .wrapper {
     max-width: 1800px; } }

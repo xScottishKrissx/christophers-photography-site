@@ -6,7 +6,7 @@ $breakpoint-tablet: 768px;
 $white: white;
 $standard-grey: #323b44;
 $orange: #ffc522;
-$pink: #ff2222e0;
+$pink: #ff3d3d;
 
 
 //Design Elements
@@ -14,9 +14,15 @@ $pink: #ff2222e0;
   //Should be used with margin-bottom
   $standard-seperation: 1rem;
 
+  //Replacement for border.
+  $standard-box-shadow-left: 0px 0px 0px 2px $white;
+  $standard-box-shadow-bottom: 0px 2px 0px 0px rgba(255,255,255,0.5);
+
+
   //header
   $navbar-background: rgba(0, 0, 0, 0.5);
 
 
   //Gallery
+  //Possibly no longer used as box-shadow less disruptive
   $gallery-border:2px solid $white;

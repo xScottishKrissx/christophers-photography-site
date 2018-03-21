@@ -120,24 +120,54 @@ p {
       background-image: url("/assets/1.jpg"); }
   .wrapper .sidebar-1 {
     background-color: #323b44;
+    box-shadow: 0px 0px 0px 2px white;
     color: white;
     font-size: 1.1rem; }
     .wrapper .sidebar-1 .sidebar-content {
       padding: 1rem; }
+    .wrapper .sidebar-1 button {
+      background-color: #323b44;
+      border: none;
+      color: #777777;
+      font-size: 2rem;
+      float: right;
+      height: 4rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      transition: all .2s linear; }
+      .wrapper .sidebar-1 button:hover {
+        box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+        color: white; }
   .wrapper .gallery-link-area-wrapper {
     margin: 0;
     margin-bottom: 1rem; }
     .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link {
-      background-color: #ff2222e0;
-      border-left: 2px solid white;
-      box-shadow: 0px -2px 0px 0px white;
+      background-color: #ff3d3d;
+      box-shadow: 0px 0px 0px 2px white;
       color: white;
       padding-top: 1rem;
       width: 150px;
       transition: background-color .5s linear; }
+      .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link button {
+        background-color: #ff3d3d;
+        border: none;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 2rem;
+        float: right;
+        height: 4rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        transition: all .2s linear; }
+        .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link button:hover {
+          color: #ff3d3d;
+          box-shadow: 0px 2px 0px 0px #ff3d3d;
+          background-color: #d6d6d6; }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link:hover {
         background-color: #d6d6d6;
+        color: #323b44;
         cursor: pointer; }
+        .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link:hover button {
+          opacity: 2.0; }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link div {
         background-position: center;
         background-repeat: no-repeat;
@@ -147,10 +177,23 @@ p {
         max-height: 100%; }
     .wrapper .gallery-link-area-wrapper .sidebar-2 {
       background-color: #323b44;
-      border-left: 2px solid white;
+      box-shadow: 0px 0px 0px 2px white;
       color: white; }
       .wrapper .gallery-link-area-wrapper .sidebar-2 .sidebar-content {
         padding: 1rem; }
+      .wrapper .gallery-link-area-wrapper .sidebar-2 button {
+        background-color: #323b44;
+        border: none;
+        color: #777777;
+        font-size: 2rem;
+        float: right;
+        height: 4rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        transition: all .2s linear; }
+        .wrapper .gallery-link-area-wrapper .sidebar-2 button:hover {
+          box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
+          color: white; }
 
 .nav-wrapper {
   color: black;
@@ -179,42 +222,79 @@ input[type=checkbox] {
       top of clickable  area and turn opacity to 0 instead. */ }
 
 #showNavLabel {
+  background-color: #323b44;
   color: white;
   font-size: 5rem;
   left: 0;
+  padding: 10px;
   position: fixed;
+  width: 100%;
   z-index: 100001; }
+  #showNavLabel .row:hover {
+    cursor: pointer; }
+    #showNavLabel .row:hover .glyphicon {
+      left: -2rem; }
+  #showNavLabel .row .header-logo h1 {
+    font-size: 1.8rem; }
+
+.glyphicon {
+  left: -3rem;
+  transition: left .2s; }
 
 .navBar {
-  background: black;
-  color: black;
+  background: #323b44;
+  box-shadow: 0px 0px 0px 10px white;
   height: 100%;
   left: -100%;
   position: fixed;
   top: 0;
-  transition: left 1s;
   width: 50vw;
   max-width: 500px;
   min-width: 208px;
   z-index: 10000;
   transition: left 0.2s; }
   .navBar .col {
-    padding-top: 7rem; }
+    padding-top: 7rem;
+    padding-left: 0;
+    padding-right: 0; }
+    .navBar .col ul {
+      line-height: 7rem; }
+      .navBar .col ul li {
+        box-shadow: 0px 5px 0px 0px white;
+        text-align: center;
+        transition: background-color 1s; }
+        .navBar .col ul li a {
+          box-shadow: 0px 0px 0px 0px white;
+          color: white;
+          font-size: 1.5rem;
+          transition: color 3s;
+          transition: box-shadow .1s linear; }
+          .navBar .col ul li a:hover {
+            box-shadow: 0px 2px 0px 0px; }
+          .navBar .col ul li a:active {
+            box-shadow: 0px 2px 0px 0px;
+            background-color: #323b44;
+            color: white; }
+        .navBar .col ul li:hover {
+          background-color: #ff3d3d; }
+        .navBar .col ul li a:hover {
+          text-decoration: none; }
 
 input[type=checkbox]:checked ~ .nav-wrapper .navBar {
-  background: black;
   color: yellow;
   top: 0;
   left: 0;
   z-index: 100000; }
 
-input[type=checkbox]:checked ~ #showNavLabel {
-  opacity: 2.0; }
+input[type=checkbox]:checked ~ #showNavLabel .glyphicon {
+  left: 0; }
 
 .footer {
   background-color: #323b44;
-  color: white;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 2rem;
   padding: 1rem;
+  text-align: center;
   width: 100%; }
 
 @media only screen and (min-width: 768px) {
@@ -223,12 +303,19 @@ input[type=checkbox]:checked ~ #showNavLabel {
 
   .wrapper .normal-nav {
     display: flex; } }
+@media only screen and (max-width: 991px) {
+  .wrapper .slider-area-wrapper div {
+    margin-bottom: 0.5rem; }
+  .wrapper .gallery-link-area-wrapper .gallery-links-container {
+    margin-bottom: 1rem; } }
 @media only screen and (min-width: 992px) {
   .wrapper .slider-area-wrapper {
     height: 500px; } }
 @media only screen and (min-width: 1366px) {
   .wrapper {
-    max-width: 1300px; } }
+    max-width: 1300px; }
+    .wrapper .normal-nav .normal-nav-container .navbar div ul {
+      right: 3rem; } }
 @media only screen and (min-width: 1920px) {
   .wrapper {
     max-width: 1800px; } }

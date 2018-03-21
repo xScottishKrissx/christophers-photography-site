@@ -13,6 +13,23 @@
   }
 }
 
+
+//Fixes a small bug where the desired effect isnt made until 993px
+@media only screen and(max-width:991px) {
+  .wrapper{
+    .slider-area-wrapper{
+      div{
+        margin-bottom: $standard-seperation / 2;
+      }
+    }
+    .gallery-link-area-wrapper{
+      .gallery-links-container{
+        margin-bottom: $standard-seperation;
+      }
+    }
+  }
+}
+
 @media only screen and(min-width:992px) {
   .wrapper .slider-area-wrapper{
     height: 500px;
@@ -22,6 +39,18 @@
 @media only screen and(min-width:1366px) {
     .wrapper{
       max-width: 1300px;
+
+      .normal-nav{
+        .normal-nav-container{
+          .navbar{
+            div{
+              ul{
+                right: 3rem;
+              }
+            }
+          }
+        }
+      }
     }
 }
 

@@ -28,6 +28,20 @@
 
 }
 
+@mixin toggle-mobile-nav {
+  .row{
+    &:hover{
+      cursor: pointer;
+      .glyphicon{left: -2rem;}
+    }
+    .header-logo{
+      h1{
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
 @mixin background-image-cover {
   background-position: center;
   background-repeat: no-repeat;
@@ -37,4 +51,46 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@mixin sidebar-button-standard {
+  button{
+    background-color: $standard-grey;
+    border: none;
+    color: #777777;
+    font-size: 2rem;
+    float: right;
+    height: 4rem;
+    margin-bottom: $standard-seperation;
+    width: 100%;
+
+   transition: all .2s linear;
+    &:hover{
+      //background-color: $white;
+      box-shadow: $standard-box-shadow-bottom;
+      color:$white;
+    }
+  }
+}
+
+@mixin gallery-button-standard {
+  button{
+    background-color: $pink;
+    border: none;
+    color: rgba(255,255,255,0.5);
+    font-size: 2rem;
+    float: right;
+    height: 4rem;
+    margin-bottom: $standard-seperation;
+    //opacity: 0.5;
+    width: 100%;
+
+   transition: all .2s linear;
+    &:hover{
+      color: $pink;
+      box-shadow: 0px 2px 0px 0px $pink;
+      background-color: #d6d6d6;
+      //opacity: 2.0;
+    }
+  }
 }

@@ -158,12 +158,14 @@ p {
 
   .sidebar-1 {
     background-color: $standard-grey;
+    box-shadow: $standard-box-shadow-left;
     color:$white;
     font-size: 1.1rem;
 
     .sidebar-content {
       padding: 1rem;
     }
+    @include sidebar-button-standard;
   }
 /////////////////////// GALLERY /////////////////////////////////
   .gallery-link-area-wrapper {
@@ -172,9 +174,10 @@ p {
 
     .gallery-links-container {
       .gallery-link {
+        @include gallery-button-standard;
         background-color: $pink;
-        border-left:$gallery-border;
-        box-shadow: 0px -2px 0px 0px $white;
+        //border-left:$gallery-border;
+        box-shadow: 0px 0px 0px 2px $white;
         color:$white;
         //padding-left: 0;
         padding-top: $standard-seperation;
@@ -184,7 +187,12 @@ p {
         transition: background-color .5s linear;
         &:hover{
           background-color: #d6d6d6;
+          color: $standard-grey;
           cursor: pointer;
+          button{
+            //box-shadow: $standard-box-shadow-bottom;
+            opacity: 2.0;
+          }
         }
 
         div{
@@ -200,12 +208,14 @@ p {
 
     .sidebar-2 {
       background-color: $standard-grey;
-      border-left: $gallery-border;
+      //border-left: $gallery-border;
+      box-shadow: $standard-box-shadow-left;
       color: $white;
 
       .sidebar-content {
         padding: 1rem;
       }
+      @include sidebar-button-standard;
     }
   }
 }
@@ -245,37 +255,62 @@ input[type=checkbox] {
 }
 
 #showNavLabel {
-  //background-color: red;
-  color: white;
+  background-color: $standard-grey;
+  color: $white;
   font-size: 5rem;
   //height: 100px;
   left: 0;
+  padding: 10px;
   position: fixed;
   //min-width: 208px;
-  //width: 100%;
+  width: 100%;
   z-index: 100001;
+
+  @include toggle-mobile-nav;
+}
+.glyphicon{
+  left: -3rem;
+  transition: left .2s;
 }
 
 .navBar {
-  background: black;
-  color: black;
+  background: $standard-grey;
+  box-shadow: 0px 0px 0px 10px $white;
   height: 100%;
   left: -100%;
   //line-height: 100px;
   position: fixed;
   top: 0;
-  transition: left 1s;
   width: 50vw;
   max-width: 500px;
   min-width: 208px;
   z-index: 10000;
+
+  //transition: left 1s;
   transition: left 0.2s;
 
-  .col{padding-top: 7rem;}
+    .col{
+      padding-top: 7rem;
+      padding-left: 0;
+      padding-right: 0;
+      ul{
+        line-height: 7rem;
+        li{
+          @include default-nav-link-styles;
+          box-shadow: 0px 5px 0px 0px $white;
+          text-align: center;
+          transition: background-color 1s;
+          &:hover{
+            background-color: $pink;
+          }
+          a:hover{text-decoration: none;}
+        }
+      }
+    }
 }
 
 input[type=checkbox]:checked ~ .nav-wrapper .navBar {
-  background: black;
+
   color: yellow;
   top: 0;
   left: 0;
@@ -283,9 +318,10 @@ input[type=checkbox]:checked ~ .nav-wrapper .navBar {
 }
 
 input[type=checkbox]:checked ~ #showNavLabel {
-  opacity: 2.0;
+  //color:$pink;
+  //opacity: 2.0;
   //z-index: 0;
-
+  .glyphicon{left: 0}
   .col {
     //background-color: green;
   }
@@ -294,8 +330,10 @@ input[type=checkbox]:checked ~ #showNavLabel {
 ////////////// FOOTER /////////////////////
 .footer{
   background-color: $standard-grey;
-  color: $white;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 2rem;
   padding: 1rem;
+  text-align: center;
   width: 100%;
 }
 
