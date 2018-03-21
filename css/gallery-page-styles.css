@@ -13,6 +13,9 @@
       outline: 2px solid white;
       height: 300px; }
 
+@media only screen and (min-width: 576px) {
+  .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption {
+    padding-bottom: 1rem; } }
 @media only screen and (min-width: 768px) {
   .mobile-nav {
     display: none; }

@@ -96,13 +96,28 @@ p {
       backface-visibility: visible; }
       .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption {
         background-color: rgba(0, 0, 0, 0.5);
-        border-bottom: 1px solid white;
+        border-bottom: none;
+        bottom: 0;
+        box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
         left: 0;
-        right: 0;
+        margin-bottom: 0;
+        padding-bottom: 7rem;
         padding-left: 1rem;
-        padding-right: 1rem; }
-        .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption ul {
-          list-style-type: none; }
+        padding-right: 1rem;
+        padding-top: 0;
+        right: 0; }
+        .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption h1 {
+          font-size: 2rem;
+          margin-bottom: 0;
+          margin-top: 0;
+          min-height: 70px;
+          padding-top: 2rem;
+          text-align: center; }
+        .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption p {
+          height: 70px;
+          margin-bottom: 0;
+          min-width: 230px;
+          padding-top: 1.5rem; }
         .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption .caption-button {
           border-top: 1px solid white;
           text-align: right;
@@ -297,6 +312,9 @@ input[type=checkbox]:checked ~ #showNavLabel .glyphicon {
   text-align: center;
   width: 100%; }
 
+@media only screen and (min-width: 576px) {
+  .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption {
+    padding-bottom: 1rem; } }
 @media only screen and (min-width: 768px) {
   .mobile-nav {
     display: none; }

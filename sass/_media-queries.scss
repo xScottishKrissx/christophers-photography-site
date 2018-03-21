@@ -1,3 +1,17 @@
+@media only screen and (min-width: $breakpoint-phablet) {
+  .wrapper{
+    .slider-area-wrapper{
+      .carousel-item{
+        .container{
+          .carousel-caption{
+            padding-bottom: $standard-seperation;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media only screen and (min-width: $breakpoint-tablet) {
 
@@ -31,16 +45,32 @@
 }
 
 @media only screen and(min-width:992px) {
-  .wrapper .slider-area-wrapper{
+  .wrapper{
+  .normal-nav{
+    //height: 46vh;
+  }
+  .slider-area-wrapper{
     height: 500px;
   }
 }
+}
+@media only screen and(min-height:800px) {
+  .wrapper{
+  .normal-nav{
+    //height: 46vh;
+  }
+}
+
+}
+
+
 
 @media only screen and(min-width:1366px) {
     .wrapper{
       max-width: 1300px;
 
       .normal-nav{
+        //height: 52vh;
         .normal-nav-container{
           .navbar{
             div{
