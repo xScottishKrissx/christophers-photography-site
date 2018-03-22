@@ -314,13 +314,21 @@ input[type=checkbox]:checked ~ #showNavLabel .glyphicon {
 
 @media only screen and (min-width: 576px) {
   .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption {
-    padding-bottom: 1rem; } }
+    padding-bottom: 1rem; }
+  .wrapper .page-gallery .row div p {
+    font-size: 2rem; } }
 @media only screen and (min-width: 768px) {
   .mobile-nav {
     display: none; }
 
   .wrapper .normal-nav {
-    display: flex; } }
+    display: flex; }
+  .wrapper .page-header {
+    padding-top: 0; }
+    .wrapper .page-header .row h1 {
+      font-size: 5rem; }
+  .wrapper .page-gallery .row div p {
+    font-size: 1.1rem; } }
 @media only screen and (max-width: 991px) {
   .wrapper .slider-area-wrapper div {
     margin-bottom: 0.5rem; }
@@ -328,12 +336,34 @@ input[type=checkbox]:checked ~ #showNavLabel .glyphicon {
     margin-bottom: 1rem; } }
 @media only screen and (min-width: 992px) {
   .wrapper .slider-area-wrapper {
-    height: 500px; } }
+    height: 500px; }
+  .wrapper .page-header .row .gallery-sub-header .row .col span {
+    visibility: visible; }
+  .wrapper .page-gallery .row div:hover .hover-caption {
+    opacity: 2.0; }
+  .wrapper .page-gallery .row div .hover-caption {
+    background-color: #ff3d3d;
+    color: white;
+    display: table;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    transition: all 1s; }
+    .wrapper .page-gallery .row div .hover-caption p {
+      display: table-cell;
+      font-size: 3rem;
+      text-align: center;
+      vertical-align: middle; }
+  .wrapper .page-gallery .row div p {
+    font-size: 1.3rem; } }
 @media only screen and (min-width: 1366px) {
   .wrapper {
     max-width: 1300px; }
     .wrapper .normal-nav .normal-nav-container .navbar div ul {
-      right: 3rem; } }
+      right: 3rem; }
+    .wrapper .page-gallery .row div p {
+      font-size: 1.6rem; } }
 @media only screen and (min-width: 1920px) {
   .wrapper {
     max-width: 1800px; } }

@@ -1,33 +1,141 @@
 @import "_mixins.scss";
 @import "_variables.scss";
 
-.wrapper{
-  .page-header{
+.wrapper {
+  .page-header {
     background-color: $standard-grey;
     //padding-left: 6rem;
     padding-top: 5rem;
-    .row{
-      div{
+
+    .row {
+      background-color: $pink;
+      margin: 0;
+
+      div {
         color: $white;
+        line-height: 4rem;
+        padding-top: $standard-seperation;
+        padding-bottom: $standard-seperation;
+
+        h1 {
+          font-size: 5rem;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5 {
+          line-height: 4rem;
+        }
+      }
+
+      .gallery-main-header {
+        text-align: center;
+      }
+
+      .gallery-sub-header {
+        .row {
+          padding-top: 0;
+
+          .col {
+            @include default-nav-link-styles;
+
+            a {
+              background-color: $white;
+              color: $standard-grey;
+              padding: $standard-seperation;
+              transition: all 1s;
+
+              &:hover {
+                text-decoration: none;
+                background-color: $standard-grey;
+                color: $white;
+              }
+            }
+
+            span {
+              visibility: hidden;
+            }
+          }
+        }
       }
     }
   }
 
-
-
-  .page-gallery{
+  .page-gallery {
     margin-top: $standard-seperation;
     margin-bottom: $standard-seperation;
-    .row{
+
+    .row {
       margin: 0;
-      div{
-        background-color: green;
+
+      div {
+        background-color: $white;
         outline: $gallery-border;
         height: 300px;
+
+        p {
+          font-size: 1.5rem;
+          padding-top: 2rem;
+        }
+
+        .hover-caption {
+          display: none;
+          padding: 0;
+
+          p {
+            font-size: 1rem;
+          }
+        }
+        @include background-image-cover;
+      }
+
+      .box-1 {
+        background-image: url("/assets/gallery-page/10.jpg");
+      }
+
+      .box-2 {
+        background-image: url("/assets/gallery-page/2.jpg");
+      }
+
+      .box-3 {
+        background-image: url("/assets/gallery-page/3.jpg");
+      }
+
+      .box-4 {
+        background-image: url("/assets/gallery-page/1.jpg");
+      }
+      //.box-5{background-image: url("/assets/gallery-page/5.jpg");}
+      .box-6 {
+        background-image: url("/assets/gallery-page/6.jpg");
+      }
+
+      .box-7 {
+        background-image: url("/assets/gallery-page/4.jpg");
+      }
+
+      .box-8 {
+        background-image: url("/assets/gallery-page/8.jpg");
+      }
+
+      .box-9 {
+        background-image: url("/assets/gallery-page/9.jpg");
+      }
+
+      .box-10 {
+        background-image: url("/assets/gallery-page/7.jpg");
+      }
+    }
+  }
+
+  .footer {
+    .row {
+      .scrollTop {
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
 }
-
-
 @import "_media-queries.scss";

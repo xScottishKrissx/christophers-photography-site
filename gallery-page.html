@@ -11,12 +11,12 @@
   <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/gallery-page-styles.css">
-  <title>CPS - Gallery</title>
+  <title>CPS-Gallery-Scirocco</title>
 </head>
 <!-- Start server on Port:4000 ctrl+alt4 , stop server ctrl+alt+q -->
 
 <body>
-  <div class="wrapper col">
+  <div class="wrapper col" name="top">
 
     <!--- nav -->
     <div class="mobile-nav">
@@ -40,7 +40,7 @@
               <li><a class="" href="#">Magna deserunt</a></li>
               <li><a class="" href="#">Cillum nostrud</a></li>
               <li><a class="" href="#">Excepteur aliquip</a></li>
-              <li><a class="" href="#">Laborum estl</a></li>
+              <li><a class="" href="#footer">Laborum estl</a></li>
             </ul>
           </div>
 
@@ -100,11 +100,23 @@
   <!---------------------------- Page-Header---------------------------------->
 <div class="page-header">
   <div class="row">
-    <div class="col-md-6">
-      <h1>Header</h1>
+    <div class="col-12 col-md-4 gallery-main-header">
+      <h1>Scirocco</h1>
     </div>
-    <div class="col-md-6">
-      <h1>Sub-Header</h1>
+    <div class="col-12 col-md-8 gallery-sub-header">
+      <div class="row">
+        <div class="col col-12 col-md-4">
+          <h3>Category</h3>
+          <a href="#">Autmotive</a>
+          <span class="category-breadcrumb-seperator"> > </span>
+          <a href="#">Scirocco</a>
+        </div>
+        <div class="col col-12 col-md-3">
+          <h3>Photos in Gallery :<h3> <h2>10</h2></div>
+        <div class="col col-12 col-md-5">
+          <h3>Most Recent Update:</h3> <h2>1 Day Ago ( 22/3/2018 )</h2></div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -113,35 +125,56 @@
   <div class="page-gallery">
 
     <div class="row">
-      <div class="col-6 col-md-4"></div>
-      <div class="col-6 col-md-4"></div>
-      <div class="col-12 col-md-4"></div>
+      <div class="col-6 col-md-4 box-1">
+
+      <div class="hover-caption">
+        <p>Outside Glasgow Necropolis</p>
+      </div>
+      </div>
+      <div class="col-6 col-md-4 box-2">2</div>
+      <div class="col-12 col-md-4 box-3">3</div>
     </div>
 
     <div class="row">
-      <div class="col-6 col-md-3"></div>
-      <div class="col-6 col-md-3"></div>
-      <div class="col-12 col-md-6"></div>
+      <div class="col-12 col-md-3 box-4">4</div>
+      <div class="col-12 col-md-3 box-5">
+        <p>One of the first times I really took the rocco for a long drive was
+          a trip to Aberfoyle. The majority of the 35 mile journey there is
+          nothing but national speed limit roads and it was the first time I
+          really "loved" driving.
+        </p>
+        <p> Not stuck doing 30 next to a school but foot
+          down, doing corners at 60mph, holding on for dear life. That's more of
+          a remark on me and my driving than the car's handling.
+          That was brilliant.</p>
+        </div>
+      <div class="col-12 col-md-6 box-6">6</div>
     </div>
 
     <div class="row">
-      <div class="col-6 col-md-6"></div>
-      <div class="col-12 col-md-3"></div>
-      <div class="col-12 col-md-3"></div>
+      <div class="col-12 col-md-6 box-7">7</div>
+      <div class="col-6 col-md-3 box-8">8</div>
+      <div class="col-6 col-md-3 box-9">9</div>
     </div>
 
     <div class="row">
-      <div class="col-12"></div>
+      <div class="col-12 box-10"></div>
     </div>
 
   </div>
 
   <!---------------------------- Footer ---------------------------------------->
-  <div class="footer">
+  <div class="footer" id="footer" name="footer">
     <div class="row">
-      <div class="col-12">
-        <h1>footer</h1>
+
+      <div class="col-6">
+        <h1>footer-content</h1>
       </div>
+
+      <div class="col-6 scrollTop">
+        <h1>Return to Top</h1>
+      </div>
+
     </div>
   </div>
 
@@ -160,7 +193,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+  <script src="assets/js.js" type="text/javascript"></script>
 
 </body>
 
