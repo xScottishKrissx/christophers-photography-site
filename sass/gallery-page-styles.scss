@@ -87,6 +87,8 @@
             font-size: 1rem;
           }
         }
+
+
         @include background-image-cover;
       }
 
@@ -100,7 +102,33 @@
 
       .box-3 {
         background-image: url("/assets/gallery-page/3.jpg");
+
+
       }
+      .glyphicon-zoom-in{display: block;}
+      .glyphicon-zoom-out{display: none;}
+      .expand-image{
+        /*
+        position: absolute;
+        width: 100%;
+        max-width: 1280px;
+        max-height: 768px;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        */
+        max-width: 100%;
+        flex:0 0 100%;
+        height: 600px;
+        transition: height 1s;
+        .expand-caption{
+          outline: none;
+          background-color: rgba(0, 0, 0, 0);}
+
+        .glyphicon-zoom-in{display: none;}
+        .glyphicon-zoom-out{display: block;}
+      }
+
 
       .box-4 {
         background-image: url("/assets/gallery-page/1.jpg");

@@ -9,7 +9,8 @@ h6 {
   font-family: "Raleway",sans-serif; }
 
 a,
-p {
+p,
+span {
   font-family: "Lato", sans-serif; }
 
 .wrapper {
@@ -156,6 +157,11 @@ p {
   .wrapper .gallery-link-area-wrapper {
     margin: 0;
     margin-bottom: 1rem; }
+    .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-header {
+      background-color: #323b44;
+      color: white; }
+      .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-header .row .col-4 {
+        padding-top: 3rem; }
     .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link {
       background-color: #ff3d3d;
       box-shadow: 0px 0px 0px 2px white;
@@ -251,10 +257,9 @@ input[type=checkbox] {
       left: -2rem; }
   #showNavLabel .row .header-logo h1 {
     font-size: 1.8rem; }
-
-.glyphicon {
-  left: -3rem;
-  transition: left .2s; }
+  #showNavLabel .glyphicon {
+    left: -3rem;
+    transition: left .2s; }
 
 .navBar {
   background: #323b44;
@@ -312,6 +317,19 @@ input[type=checkbox]:checked ~ #showNavLabel .glyphicon {
   text-align: center;
   width: 100%; }
 
+.scroll-to-top-btn {
+  background-color: #ff3d3d;
+  bottom: 0;
+  color: white;
+  font-size: 2rem;
+  outline: 2px solid #323b44;
+  padding-right: 0rem;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  visibility: hidden;
+  width: 11rem; }
+
 @media only screen and (min-width: 576px) {
   .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption {
     padding-bottom: 1rem; }
@@ -355,6 +373,45 @@ input[type=checkbox]:checked ~ #showNavLabel .glyphicon {
       font-size: 3rem;
       text-align: center;
       vertical-align: middle; }
+  .wrapper .page-gallery .row div .click-caption {
+    display: table;
+    left: 0;
+    outline: 0;
+    position: absolute;
+    top: 94%;
+    width: 100%;
+    transition: all .5s; }
+    .wrapper .page-gallery .row div .click-caption:hover {
+      top: 90%; }
+    .wrapper .page-gallery .row div .click-caption div {
+      outline: none; }
+    .wrapper .page-gallery .row div .click-caption .toggle-caption {
+      color: white;
+      left: 1rem;
+      top: 0; }
+      .wrapper .page-gallery .row div .click-caption .toggle-caption span {
+        left: 1rem;
+        position: absolute; }
+      .wrapper .page-gallery .row div .click-caption .toggle-caption .caption-info {
+        left: 3rem; }
+    .wrapper .page-gallery .row div .click-caption .caption-text {
+      background-color: #ff3d3d;
+      color: white;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
+  .wrapper .page-gallery .row div .show {
+    top: 0 !important; }
+  .wrapper .page-gallery .row div .hide {
+    top: 94% !important; }
+  .wrapper .page-gallery .row div .expand-caption {
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    height: 3rem;
+    outline: none; }
+    .wrapper .page-gallery .row div .expand-caption:hover {
+      cursor: pointer; }
   .wrapper .page-gallery .row div p {
     font-size: 1.3rem; } }
 @media only screen and (min-width: 1366px) {

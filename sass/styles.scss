@@ -17,9 +17,11 @@ h6 {
 }
 
 a,
-p {
+p,
+span {
   font-family: "Lato", sans-serif;
 }
+
 
 .wrapper {
   background-color: $white;
@@ -194,6 +196,15 @@ p {
     margin-bottom: $standard-seperation;
 
     .gallery-links-container {
+      .gallery-header{
+        background-color: $standard-grey;
+        color: $white;
+        .row{
+          .col-4{
+            padding-top: 3rem;
+          }
+        }
+      }
       .gallery-link {
         @include gallery-button-standard;
         background-color: $pink;
@@ -288,11 +299,12 @@ input[type=checkbox] {
   z-index: 100001;
 
   @include toggle-mobile-nav;
+  .glyphicon{
+    left: -3rem;
+    transition: left .2s;
+  }
 }
-.glyphicon{
-  left: -3rem;
-  transition: left .2s;
-}
+
 
 .navBar {
   background: $standard-grey;
@@ -356,6 +368,20 @@ input[type=checkbox]:checked ~ #showNavLabel {
   padding: 1rem;
   text-align: center;
   width: 100%;
+}
+
+.scroll-to-top-btn{
+  background-color: $pink;
+  bottom: 0;
+  color: $white;
+  font-size: 2rem;
+  outline: 2px solid $standard-grey;
+  padding-right: 0rem;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  visibility: hidden;
+  width: 11rem;
 }
 
 
