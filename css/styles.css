@@ -20,7 +20,108 @@ span {
   padding: 0;
   width: 100%;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  /*****************************************************************************/
+  /*****************************************************************************/
+  /*****************************************************************************/
+  /*****************************************************************************/
+  /*****************************************************************************/
+  /*****************************************************************************/
+  /*****************************************************************************/
+  /*****************************************************************************/
+  /*****************************************************************************/
+  /*****************************************************************************/ }
+  .wrapper .nav-wrapper {
+    color: black;
+    height: 10rem;
+    left: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top: 10rem;
+    width: 100%;
+    z-index: 1000; }
+    .wrapper .nav-wrapper .col {
+      cursor: pointer; }
+      .wrapper .nav-wrapper .col .showNavIcon {
+        font-size: 3rem;
+        float: left;
+        line-height: 5rem; }
+  .wrapper input[type=checkbox] {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    /* For mobile, it's typically better to position checkbox on
+        top of clickable  area and turn opacity to 0 instead. */ }
+  .wrapper #showNavLabel {
+    color: white;
+    font-size: 5rem;
+    left: 0;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 100001; }
+    .wrapper #showNavLabel .row:hover {
+      cursor: pointer; }
+      .wrapper #showNavLabel .row:hover .glyphicon {
+        left: -2rem; }
+    .wrapper #showNavLabel .row .header-logo h1 {
+      font-size: 1.8rem;
+      text-align: right;
+      padding-right: 1rem; }
+    .wrapper #showNavLabel .glyphicon {
+      left: -3rem;
+      transition: left 0.2s; }
+  .wrapper .navBar {
+    background: #323b44;
+    box-shadow: 0 0 0 10px white;
+    left: -100%;
+    position: fixed;
+    top: 8rem;
+    width: 50vw;
+    max-width: 500px;
+    min-width: 208px;
+    z-index: 10000;
+    transition: left 0.2s; }
+    .wrapper .navBar .col {
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0; }
+      .wrapper .navBar .col ul {
+        line-height: 7rem;
+        margin-bottom: 0; }
+        .wrapper .navBar .col ul li {
+          box-shadow: 0 5px 0 0 white;
+          text-align: center;
+          transition: background-color 1s; }
+          .wrapper .navBar .col ul li a {
+            box-shadow: 0px 0px 0px 0px white;
+            color: white;
+            font-size: 1.5rem;
+            transition: color 3s;
+            transition: box-shadow .1s linear; }
+            .wrapper .navBar .col ul li a:hover {
+              box-shadow: 0px 2px 0px 0px; }
+            .wrapper .navBar .col ul li a:active {
+              box-shadow: 0px 2px 0px 0px;
+              background-color: #323b44;
+              color: white; }
+          .wrapper .navBar .col ul li:hover {
+            background-color: #ff3d3d; }
+          .wrapper .navBar .col ul li a:hover {
+            text-decoration: none; }
+  .wrapper input[type=checkbox]:checked ~ .nav-wrapper .navBar {
+    color: yellow;
+    top: 8rem;
+    left: 0;
+    z-index: 100000; }
+  .wrapper input[type=checkbox]:checked ~ #showNavLabel {
+    height: 100%;
+    z-index: 1000; }
+    .wrapper input[type=checkbox]:checked ~ #showNavLabel .glyphicon {
+      left: 0; }
   .wrapper .normal-nav {
     background-position: center;
     background-repeat: no-repeat;
@@ -29,8 +130,7 @@ span {
     background-position: bottom;
     display: none;
     height: 40vh;
-    margin: 0;
-    margin-bottom: 1rem; }
+    margin: 0 0 1rem; }
     .wrapper .normal-nav .brand {
       padding: 0; }
       .wrapper .normal-nav .brand .title {
@@ -71,10 +171,10 @@ span {
                 background-color: #323b44;
                 color: white; }
   .wrapper .slider-area-wrapper {
-    margin: 0;
-    margin-bottom: 1rem; }
+    margin: 0 0 1rem; }
     .wrapper .slider-area-wrapper .slider {
-      padding: 0; }
+      padding: 0;
+      margin-bottom: 1rem; }
       .wrapper .slider-area-wrapper .slider .col {
         padding: 0; }
       .wrapper .slider-area-wrapper .slider .glyphicon {
@@ -102,10 +202,7 @@ span {
         box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
         left: 0;
         margin-bottom: 0;
-        padding-bottom: 7rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 0;
+        padding: 0 1rem 7rem;
         right: 0; }
         .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption h1 {
           font-size: 2rem;
@@ -155,8 +252,9 @@ span {
         box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
         color: white; }
   .wrapper .gallery-link-area-wrapper {
-    margin: 0;
-    margin-bottom: 1rem; }
+    margin: 0 0 1rem;
+    /*****************************************************************************/
+    /*****************************************************************************/ }
     .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-header {
       background-color: #323b44;
       color: white; }
@@ -164,11 +262,11 @@ span {
         padding-top: 3rem; }
     .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link {
       background-color: #ff3d3d;
-      box-shadow: 0px 0px 0px 2px white;
+      box-shadow: 0 0 0 2px white;
       color: white;
       padding-top: 1rem;
       width: 150px;
-      transition: background-color .5s linear; }
+      transition: background-color 0.5s linear; }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link button {
         background-color: #ff3d3d;
         border: none;
@@ -216,99 +314,6 @@ span {
           box-shadow: 0px 2px 0px 0px rgba(255, 255, 255, 0.5);
           color: white; }
 
-.nav-wrapper {
-  color: black;
-  height: 10rem;
-  left: 0;
-  max-width: 100%;
-  margin: 0 auto;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000; }
-  .nav-wrapper .col {
-    cursor: pointer; }
-    .nav-wrapper .col .showNavIcon {
-      font-size: 3rem;
-      float: left;
-      line-height: 5rem; }
-
-input[type=checkbox] {
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  /* For mobile, it's typically better to position checkbox on
-      top of clickable  area and turn opacity to 0 instead. */ }
-
-#showNavLabel {
-  background-color: #323b44;
-  color: white;
-  font-size: 5rem;
-  left: 0;
-  padding: 10px;
-  position: fixed;
-  width: 100%;
-  z-index: 100001; }
-  #showNavLabel .row:hover {
-    cursor: pointer; }
-    #showNavLabel .row:hover .glyphicon {
-      left: -2rem; }
-  #showNavLabel .row .header-logo h1 {
-    font-size: 1.8rem; }
-  #showNavLabel .glyphicon {
-    left: -3rem;
-    transition: left .2s; }
-
-.navBar {
-  background: #323b44;
-  box-shadow: 0px 0px 0px 10px white;
-  height: 100%;
-  left: -100%;
-  position: fixed;
-  top: 0;
-  width: 50vw;
-  max-width: 500px;
-  min-width: 208px;
-  z-index: 10000;
-  transition: left 0.2s; }
-  .navBar .col {
-    padding-top: 7rem;
-    padding-left: 0;
-    padding-right: 0; }
-    .navBar .col ul {
-      line-height: 7rem; }
-      .navBar .col ul li {
-        box-shadow: 0px 5px 0px 0px white;
-        text-align: center;
-        transition: background-color 1s; }
-        .navBar .col ul li a {
-          box-shadow: 0px 0px 0px 0px white;
-          color: white;
-          font-size: 1.5rem;
-          transition: color 3s;
-          transition: box-shadow .1s linear; }
-          .navBar .col ul li a:hover {
-            box-shadow: 0px 2px 0px 0px; }
-          .navBar .col ul li a:active {
-            box-shadow: 0px 2px 0px 0px;
-            background-color: #323b44;
-            color: white; }
-        .navBar .col ul li:hover {
-          background-color: #ff3d3d; }
-        .navBar .col ul li a:hover {
-          text-decoration: none; }
-
-input[type=checkbox]:checked ~ .nav-wrapper .navBar {
-  color: yellow;
-  top: 0;
-  left: 0;
-  z-index: 100000; }
-
-input[type=checkbox]:checked ~ #showNavLabel .glyphicon {
-  left: 0; }
-
 .footer {
   background-color: #323b44;
   color: rgba(255, 255, 255, 0.55);
@@ -323,13 +328,17 @@ input[type=checkbox]:checked ~ #showNavLabel .glyphicon {
   color: white;
   font-size: 2rem;
   outline: 2px solid #323b44;
-  padding-right: 0rem;
+  padding-right: 0;
   position: fixed;
   right: 0;
   text-align: center;
   visibility: hidden;
   width: 11rem; }
+  .scroll-to-top-btn:hover {
+    cursor: pointer; }
 
+/*****************************************************************************/
+/*****************************************************************************/
 @media only screen and (min-width: 576px) {
   .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption {
     padding-bottom: 1rem; }
@@ -341,6 +350,11 @@ input[type=checkbox]:checked ~ #showNavLabel .glyphicon {
 
   .wrapper .normal-nav {
     display: flex; }
+    .wrapper .normal-nav .normal-nav-container .navbar div ul li a {
+      box-shadow: 0px 0px 0px 2px white;
+      display: table-cell;
+      height: 5rem;
+      vertical-align: middle; }
   .wrapper .page-header {
     padding-top: 0; }
     .wrapper .page-header .row h1 {
@@ -348,8 +362,6 @@ input[type=checkbox]:checked ~ #showNavLabel .glyphicon {
   .wrapper .page-gallery .row div p {
     font-size: 1.1rem; } }
 @media only screen and (max-width: 991px) {
-  .wrapper .slider-area-wrapper div {
-    margin-bottom: 0.5rem; }
   .wrapper .gallery-link-area-wrapper .gallery-links-container {
     margin-bottom: 1rem; } }
 @media only screen and (min-width: 992px) {
@@ -357,53 +369,6 @@ input[type=checkbox]:checked ~ #showNavLabel .glyphicon {
     height: 500px; }
   .wrapper .page-header .row .gallery-sub-header .row .col span {
     visibility: visible; }
-  .wrapper .page-gallery .row div:hover .hover-caption {
-    opacity: 2.0; }
-  .wrapper .page-gallery .row div .hover-caption {
-    background-color: #ff3d3d;
-    color: white;
-    display: table;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    transition: all 1s; }
-    .wrapper .page-gallery .row div .hover-caption p {
-      display: table-cell;
-      font-size: 3rem;
-      text-align: center;
-      vertical-align: middle; }
-  .wrapper .page-gallery .row div .click-caption {
-    display: table;
-    left: 0;
-    outline: 0;
-    position: absolute;
-    top: 94%;
-    width: 100%;
-    transition: all .5s; }
-    .wrapper .page-gallery .row div .click-caption:hover {
-      top: 90%; }
-    .wrapper .page-gallery .row div .click-caption div {
-      outline: none; }
-    .wrapper .page-gallery .row div .click-caption .toggle-caption {
-      color: white;
-      left: 1rem;
-      top: 0; }
-      .wrapper .page-gallery .row div .click-caption .toggle-caption span {
-        left: 1rem;
-        position: absolute; }
-      .wrapper .page-gallery .row div .click-caption .toggle-caption .caption-info {
-        left: 3rem; }
-    .wrapper .page-gallery .row div .click-caption .caption-text {
-      background-color: #ff3d3d;
-      color: white;
-      display: table-cell;
-      text-align: center;
-      vertical-align: middle; }
-  .wrapper .page-gallery .row div .show {
-    top: 0 !important; }
-  .wrapper .page-gallery .row div .hide {
-    top: 94% !important; }
   .wrapper .page-gallery .row div .expand-caption {
     background-color: transparent;
     color: white;
@@ -414,6 +379,14 @@ input[type=checkbox]:checked ~ #showNavLabel .glyphicon {
       cursor: pointer; }
   .wrapper .page-gallery .row div p {
     font-size: 1.3rem; } }
+@media only screen and (min-width: 1200px) {
+  .wrapper .normal-nav {
+    display: flex; }
+    .wrapper .normal-nav .normal-nav-container .navbar div ul li a {
+      box-shadow: 0px 0px 0px 0px white;
+      display: flex;
+      vertical-align: middle;
+      height: auto; } }
 @media only screen and (min-width: 1366px) {
   .wrapper {
     max-width: 1300px; }

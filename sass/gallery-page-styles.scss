@@ -3,9 +3,9 @@
 
 .wrapper {
   .page-header {
-    background-color: $standard-grey;
+    //background-color: $standard-grey;
     //padding-left: 6rem;
-    padding-top: 5rem;
+    padding-top: 0rem;
 
     .row {
       background-color: $pink;
@@ -68,12 +68,17 @@
 
     .row {
       margin: 0;
-
-      div {
+      .text-box{
         background-color: $white;
+        font-weight: bold;
+      }
+      div {
+        //background-color: $white;
         outline: $gallery-border;
-        height: 300px;
-
+        height: $gallery-page-image-height;
+        div{
+          outline: none;
+        }
         p {
           font-size: 1.5rem;
           padding-top: 2rem;
@@ -87,9 +92,80 @@
             font-size: 1rem;
           }
         }
-
-
         @include background-image-cover;
+
+        &:hover .hover-caption {
+          //left: 0rem;
+          opacity: 2.0;
+        }
+
+        .hover-caption {
+          background-color: $pink;
+          color: $white;
+          display: table;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          width: 100%;
+          transition: all 1s;
+
+          p {
+            display: table-cell;
+            font-size: 3rem;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+
+        .click-caption {
+          display: table;
+          left: 0;
+          outline: 0;
+          position: absolute;
+          top: 94%;
+          width: 100%;
+          transition: all 0.5s;
+
+          &:hover {
+            top: 90%;
+          }
+
+          div {
+            outline: none;
+          }
+
+          .toggle-caption {
+            color: $white;
+            left: 1rem;
+            //position: absolute;
+            top: 0;
+
+            span {
+              left: 1rem;
+              position: absolute;
+            }
+
+            .caption-info {
+              left: 3rem;
+            }
+          }
+
+          .caption-text {
+            background-color: $pink;
+            color: $white;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+
+        .show {
+          top: 0 !important;
+        }
+
+        .hide {
+          top: 94% !important;
+        }
       }
 
       .box-1 {
@@ -102,12 +178,17 @@
 
       .box-3 {
         background-image: url("/assets/gallery-page/3.jpg");
-
-
       }
-      .glyphicon-zoom-in{display: block;}
-      .glyphicon-zoom-out{display: none;}
-      .expand-image{
+
+      .glyphicon-zoom-in {
+        display: block;
+      }
+
+      .glyphicon-zoom-out {
+        display: none;
+      }
+
+      .expand-image {
         /*
         position: absolute;
         width: 100%;
@@ -118,17 +199,24 @@
         margin: 0;
         */
         max-width: 100%;
-        flex:0 0 100%;
+        flex: 0 0 100%;
         height: 600px;
-        transition: height 1s;
-        .expand-caption{
+        transition: all 1s;
+
+        .expand-caption {
+          height: 100%;
           outline: none;
-          background-color: rgba(0, 0, 0, 0);}
+          background-color: rgba(0, 0, 0, 0) !important;
+        }
 
-        .glyphicon-zoom-in{display: none;}
-        .glyphicon-zoom-out{display: block;}
+        .glyphicon-zoom-in {
+          display: none;
+        }
+
+        .glyphicon-zoom-out {
+          display: block;
+        }
       }
-
 
       .box-4 {
         background-image: url("/assets/gallery-page/1.jpg");

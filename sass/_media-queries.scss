@@ -29,6 +29,22 @@
   .wrapper {
     .normal-nav {
       display: flex;
+      .normal-nav-container{
+        .navbar{
+          div{
+            ul{
+              li{
+                a{
+                  box-shadow: 0px 0px 0px 2px $white;
+                  display: table-cell;
+                  height: 5rem;
+                  vertical-align: middle;
+                }
+              }
+            }
+          }
+        }
+      }
     }
 
     .page-header {
@@ -55,12 +71,6 @@
 //Fixes a small bug where the desired effect isnt made until 993px
 @media only screen and(max-width:991px) {
   .wrapper {
-    .slider-area-wrapper {
-      div {
-        margin-bottom: $standard-seperation / 2;
-      }
-    }
-
     .gallery-link-area-wrapper {
       .gallery-links-container {
         margin-bottom: $standard-seperation;
@@ -95,68 +105,8 @@
     .page-gallery {
       .row {
         div {
-          &:hover .hover-caption {
-            //left: 0rem;
-            opacity: 2.0;
-          }
-
-          .hover-caption {
-            background-color: $pink;
-            color: $white;
-            display: table;
-            left: 0;
-            opacity: 0;
-            position: absolute;
-            width: 100%;
-            transition: all 1s;
-
-            p {
-              display: table-cell;
-              font-size: 3rem;
-              text-align: center;
-              vertical-align: middle;
-            }
-          }
-
-          .click-caption {
-
-            display: table;
-            left: 0;
-            outline: 0;
-            position: absolute;
-            top: 94%;
-            width: 100%;
-
-            transition: all .5s;
-            &:hover{top:90%;}
-            div{outline: none;}
-            .toggle-caption{
-              color: $white;
-              left: 1rem;
-              //position: absolute;
-              top:0;
-              span{left: 1rem; position: absolute;}
-              .caption-info{left: 3rem;}
-            }
-
-            .caption-text{
-              background-color: $pink;
-              color: $white;
-              display: table-cell;
-              text-align: center;
-              vertical-align: middle;
-            }
 
 
-          }
-
-          .show {
-            top: 0 !important;
-          }
-
-          .hide {
-            top: 94% !important;
-          }
           .expand-caption{
             background-color: transparent;
             color: $white;
@@ -184,6 +134,30 @@
     }
   }
 }
+@media only screen and(min-width:1200px) {
+.wrapper{
+  .normal-nav {
+    display: flex;
+    .normal-nav-container{
+      .navbar{
+        div{
+          ul{
+            li{
+              a{
+                box-shadow: 0px 0px 0px 0px $white;
+                display: flex;
+                vertical-align: middle;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}
+
 @media only screen and(min-width:1366px) {
   .wrapper {
     max-width: 1300px;
