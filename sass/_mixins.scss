@@ -9,7 +9,7 @@
 
 
 @mixin default-nav-link-styles {
-  
+
   a{
 
     box-shadow: 0px 0px 0px 0px $white;
@@ -57,14 +57,15 @@
 }
 
 @mixin sidebar-button-standard {
-  button{
+  span{
     background-color: $standard-grey;
     border: none;
     color: #777777;
-    font-size: 2rem;
+    font-size: 4rem;
     float: right;
     height: 4rem;
     margin-bottom: $standard-seperation;
+    text-align: center;
     width: 100%;
 
    transition: all .2s linear;
@@ -73,11 +74,28 @@
       box-shadow: $standard-box-shadow-bottom;
       color:$white;
     }
+}
+}
+
+@mixin side-bar-text-settings {
+  cursor: pointer;
+  padding: 1rem;
+  transition: box-shadow 0.5s;
+  p{
+    color:rgba(255, 255, 255, 0.55);
+  }
+  &:hover{
+  box-shadow: -2px 0px 0px 0px $white;
+  }
+
+  &:active{
+    background-color: $white;
+    color:$standard-grey;
   }
 }
 
 @mixin gallery-button-standard {
-  button{
+  span{
     background-color: $pink;
     border: none;
     color: rgba(255,255,255,0.5);

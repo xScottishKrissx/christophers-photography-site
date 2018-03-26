@@ -2,65 +2,7 @@
 @import "_variables.scss";
 
 .wrapper {
-  .page-header {
-    //background-color: $standard-grey;
-    //padding-left: 6rem;
-    padding-top: 0rem;
 
-    .row {
-      background-color: $pink;
-      margin: 0;
-
-      div {
-        color: $white;
-        line-height: 4rem;
-        padding-top: $standard-seperation;
-        padding-bottom: $standard-seperation;
-
-        h1 {
-          font-size: 5rem;
-        }
-
-        h2,
-        h3,
-        h4,
-        h5 {
-          line-height: 4rem;
-        }
-      }
-
-      .gallery-main-header {
-        text-align: center;
-      }
-
-      .gallery-sub-header {
-        .row {
-          padding-top: 0;
-
-          .col {
-            @include default-nav-link-styles;
-
-            a {
-              background-color: $white;
-              color: $standard-grey;
-              padding: $standard-seperation;
-              transition: all 1s;
-
-              &:hover {
-                text-decoration: none;
-                background-color: $standard-grey;
-                color: $white;
-              }
-            }
-
-            span {
-              visibility: hidden;
-            }
-          }
-        }
-      }
-    }
-  }
 
   .page-gallery {
     margin-top: $standard-seperation;

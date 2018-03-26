@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/gallery-page-styles.css">
-  <title>CPS-Gallery-Scirocco</title>
+  <link rel="stylesheet" href="css/categories.css">
+  <title>CPS - Categories</title>
 </head>
 <!-- Start server on Port:4000 ctrl+alt4 , stop server ctrl+alt+q -->
 
@@ -20,10 +20,11 @@
 
     <!--- nav -->
     <div class="mobile-nav">
-      <input type="checkbox" id="toggle-1">
+      <input type="checkbox" id="toggle-1" class="toggle-1">
       <label id="showNavLabel" for="toggle-1">
 
           <div class="row">
+
             <span class="col-2 showNavIcon glyphicon glyphicon-th-list "></span>
             <div class="col-10 header-logo"><h1><a href="index.html">christophers photography site</a></h1></div>
           </div>
@@ -40,7 +41,7 @@
               <li><a class="" href="#">Magna deserunt</a></li>
               <li><a class="" href="#">Cillum nostrud</a></li>
               <li><a class="" href="#">Excepteur aliquip</a></li>
-              <li><a class="" href="#footer">Laborum estl</a></li>
+              <li><a class="" href="#">Laborum estl</a></li>
             </ul>
           </div>
 
@@ -52,7 +53,7 @@
 
 
     <!--------------------------- Normal Nav ------------------------------------>
-    <div class="normal-nav row">
+    <div class="normal-nav row" name="top">
 
       <div class="col-md-4 col-lg-6 brand">
         <div class="title">
@@ -97,12 +98,13 @@
         </nav>
       </div>
     </div>
+
     <!---------------------------- Page-Header---------------------------------->
     <div class="page-header">
       <div class="row">
         <div class="col-12 col-md-4 main-header">
-          <h5>Gallery</h5>
-          <h1>Scirocco</h1>
+          <h4>Category</h4>
+          <h1>AUTOMOTIVE</h1>
         </div>
 
 
@@ -114,15 +116,14 @@
               <h3>1 Day Ago</h3>
             </div>
 
-            <div class="col col-12 col-sm-6 col-md-4">
-              <h4>Tags</h4>
-              <a href="categories.html">Autmotive</a>
-              <span class="category-breadcrumb-seperator"> > </span>
-              <a href="gallery-page.html">Scirocco</a>
-            </div>
-
             <div class="col col-12 col-sm-6 col-md-3">
-              <h4>Items in Gallery :<h4> <h3>10</h3>
+              <h4>Items in Category:</h4>
+              <h3>4</h3>
+            </div>
+
+            <div class="col col-12 col-sm-6 col-md-4">
+              <h4>Tags:</h4>
+              <a href="categories.html">Automotive</a>
             </div>
 
 
@@ -133,68 +134,32 @@
       </div>
     </div>
 
+    <!------------------------ CATEGORIES CONTENT ------------------------->
+    <div class="categories-wrapper row">
+      <div class="col">
+
+        <div class="row">
+          <a href="gallery-page.html" class="col-12 col-md-6  category-1-box">
+            <div class="category-caption"><h3>Scirocco</h3> <h4>&nbsp; 10 images </h4></div>
+          </a>
+          <a href="" class="col-12 col-md-6 category-2-box">
+            <div class="category-caption"><h3>Focus</h3> <h4>&nbsp; 10 images </h4></div>
+          </a>
 
 
 
-
-    <!---------------------------- Page-Gallery --------------------------------->
-    <div class="page-gallery">
-
-      <div class="row">
-        <div class="col-6 col-md-4 box-1">
-
-          <div class="hover-caption">
-            <p>Outside Glasgow Necropolis</p>
-          </div>
-
+          <a href="" class="col-12 col-md-6  category-3-box">
+            <div class="category-caption"><h3>Exotic Spotting</h3> <h4>&nbsp; 10 images </h4></div>
+          </a>
+          <a href="" class="col-12 col-md-6  category-4-box">
+            <div class="category-caption"><h3>Misc.</h3> <h4>&nbsp; 10 images </h4></div>
+          </a>
         </div>
-        <div class="col-6 col-md-4 box-2">
 
-          <div class="click-caption">
-            <div class="toggle-caption">
-              <span class="glyphicon glyphicon-info-sign"></span>
-              <span class="caption-info">Information</span>
-            </div>
-            <div class="caption-text">
-              <p>Govan</p>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-12 col-md-4 box-3">
-
-        </div>
       </div>
-
-      <div class="row">
-        <div class="col-12 col-md-3 box-4">4</div>
-        <div class="col-12 col-md-3 box-5 text-box">
-
-          <p>One of the first times I really took the rocco for a long drive was a trip to Aberfoyle. The majority of the 35 mile journey there is nothing but national speed limit roads and it was the first time I really "loved" driving.
-          </p>
-          <p> Not stuck doing 30 next to a school but foot down, doing corners at 60mph, holding on for dear life. That's more of a remark on me and my driving than the car's handling. That was brilliant.</p>
-        </div>
-        <div class="col-12 col-md-6 box-6">6</div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 col-md-6 box-7">7</div>
-        <div class="col-6 col-md-3 box-8">
-          <div class="expand-caption">
-            <span class="glyphicon glyphicon-zoom-in">Expand</span>
-            <span class="glyphicon glyphicon-zoom-out">Expand</span>
-          </div>
-        </div>
-        <div class="col-6 col-md-3 box-9">9</div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 box-10"></div>
-      </div>
-
     </div>
 
-    <!---------------------------- Footer ---------------------------------------->
+    <!--------------------------- Footer ------------------------------------>
     <div class="footer">
       <div class="row">
         <div class="col-12">
@@ -213,9 +178,8 @@
     <div class="scroll-to-top-btn">
       <p>Return to Top</p>
     </div>
+
   </div>
-
-
 
 
 

@@ -15,6 +15,14 @@ h5,
 h6 {
   font-family: "Raleway",sans-serif;
 }
+h1{font-size: $standard-h1-size;}
+h2{font-size: $standard-h2-size;}
+h3{font-size: $standard-h3-size;}
+h4{font-size: $standard-h4-size;}
+h5{font-size: $standard-h5-size;}
+h6{font-size: $standard-h6-size;}
+
+
 
 a,
 p,
@@ -85,6 +93,11 @@ span {
       left: -3rem;
       transition: left 0.2s;
     }
+    .header-logo{
+      h1{
+        a{color: $white;}
+      }
+    }
   }
 
   .navBar {
@@ -119,6 +132,15 @@ span {
 
           &:hover {
             background-color: $pink;
+          }
+          a:active {
+            background-color: $white;
+            color:$standard-grey;
+            text-decoration: underline;
+            &::after{
+              content: "...";
+            }
+
           }
 
           a:hover {
@@ -172,10 +194,18 @@ span {
         margin: 0;
 
         h1 {
-          color: $white;
+
+          font-size: $standard-h1-size / 1.5;
           margin: 0;
           padding: 3rem 0 0 3rem;
           position: absolute;
+          a{
+             color: $white;
+             //transition: all 0.5s;
+             &:hover{
+              // box-shadow: $standard-box-shadow-bottom;
+             }
+           }
         }
       }
     }
@@ -194,6 +224,70 @@ span {
             li {
               padding-left: 1.5rem;
               @include default-nav-link-styles;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*****************************************************************************/
+  ///////////////////////////////// PAGE HEADER ////////////////////////////////
+  /*****************************************************************************/
+  .page-header {
+    //background-color: $standard-grey;
+    //padding-left: 6rem;
+    padding-top: 0rem;
+
+    .row {
+      background-color: $pink;
+      margin: 0;
+
+      div {
+        color: $white;
+        line-height: 4rem;
+        padding-top: $standard-seperation;
+        padding-bottom: $standard-seperation;
+
+        h1 {
+          font-size: 5rem;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5 {
+          line-height: 4rem;
+        }
+      }
+
+      .main-header {
+        padding-top: 5rem;
+        text-align: center;
+        h1{margin: 0;}
+      }
+
+      .sub-header {
+        .row {
+          padding-top: 0;
+
+          .col {
+            @include default-nav-link-styles;
+
+            a {
+              background-color: $white;
+              color: $standard-grey;
+              padding: $standard-seperation;
+              transition: all 1s;
+
+              &:hover {
+                text-decoration: none;
+                background-color: $standard-grey;
+                color: $white;
+              }
+            }
+
+            span {
+              visibility: hidden;
             }
           }
         }
@@ -309,7 +403,9 @@ span {
     font-size: 1.1rem;
 
     .sidebar-content {
-      padding: 1rem;
+
+      @include side-bar-text-settings;
+
     }
     @include sidebar-button-standard;
   }
@@ -374,21 +470,45 @@ span {
       color: $white;
 
       .sidebar-content {
-        padding: 1rem;
+        @include side-bar-text-settings;
       }
       @include sidebar-button-standard;
     }
   }
 }
-////////////// FOOTER /////////////////////
+/*****************************************************************************/
+///////////////////////////////// FOOTER //////////////////////////////////////
+/*****************************************************************************/
 
 .footer {
   background-color: $standard-grey;
   color: rgba(255, 255, 255, 0.55);
   font-size: 2rem;
   padding: 1rem;
+  padding-bottom: 10rem;
   text-align: center;
   width: 100%;
+  .row{
+    div{
+      .row{
+        margin: 0 auto;
+        max-width: 360px;
+        padding-top: 1rem;
+
+        div{
+          @include background-image-contain;
+          //background-color: red;
+          min-height: 50px;
+        }
+        .twitter{background-image: url("/assets/social-media/twitter.png");}
+        .gmail{background-image: url("/assets/social-media/gmail.png");}
+        .blog{
+          background-color: white;
+          background-image: url("/assets/social-media/blog.png");
+        }
+      }
+    }
+  }
 }
 
 .scroll-to-top-btn {
@@ -403,6 +523,8 @@ span {
   text-align: center;
   visibility: hidden;
   width: 11rem;
+
+  transition: all 0.5s;
   &:hover{cursor:pointer;}
 }
 /*****************************************************************************/

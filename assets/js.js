@@ -27,18 +27,18 @@ $(document).ready(function() {
     $(this).toggleClass("show")
   });
 
-  $(".expand-caption").on("click", function() {
+  $(".expand-caption").on("click",function() {
     //$("col-12 col-md-4 .box-3").addClass("col-1")
     $(this).parent().toggleClass("expand-image");
   });
 
-  $(window).on("scroll", function() {
+  $(window).on("scroll",function() {
     //$("col-12 col-md-4 .box-3").addClass("col-1")
     if ($(window).scrollTop() < 1000) {
-      $(".scroll-to-top-btn").css("visibility", "hidden");
+      $(".scroll-to-top-btn").css("visibility","hidden");
 
-    } else if ($(window).scrollTop() > 1000) {
-      $(".scroll-to-top-btn").css("visibility", "visible");
+    }else if($(window).scrollTop() > 1000){
+        $(".scroll-to-top-btn").css("visibility","visible");
     };
   });
 
@@ -47,26 +47,26 @@ $(document).ready(function() {
   //});
 
   $(function() {
-      $(".wrapper").swipe({
-        //Generic swipe handler for all directions
-        swipeRight: function(event, direction, distance, duration, fingerCount, fingerData) {
-          console.log("You Swiped in " + direction);
-          $(".navBar").css("left", "0");
-        }
-      });
+    $(".wrapper").swipe( {
+      //Generic swipe handler for all directions
+      swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+      //  $(this).text("You swiped " + direction );
+      console.log("You Swiped in " + direction);
+      $(".navBar").css("left","0");
+      }
+    });
 
-      $(".wrapper").swipe({
-          //Generic swipe handler for all directions      swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+    $(".wrapper").swipe( {
+      //Generic swipe handler for all directions
+      swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
 
-          console.log("You Swiped in " + direction);
-          $(".navBar").css("left", "-100%");
-        }
-      });
+      console.log("You Swiped in " + direction);
+      $(".navBar").css("left","-100%");
+      }
+    });
 
     //Set some options later
-    $("#test").swipe({
-      fingers: 2
-    });
+    $("#test").swipe( {fingers:2} );
   });
 
 });
