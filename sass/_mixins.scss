@@ -61,9 +61,9 @@
     background-color: $standard-grey;
     border: none;
     color: #777777;
-    font-size: 4rem;
+    font-size: 2rem;
     float: right;
-    height: 4rem;
+    //height: 4rem;
     margin-bottom: $standard-seperation;
     text-align: center;
     width: 100%;
@@ -81,11 +81,13 @@
   cursor: pointer;
   padding: 1rem;
   transition: box-shadow 0.5s;
-  p{
+  p, h5{
     color:rgba(255, 255, 255, 0.55);
+    //font-size: 2rem;
   }
+
   &:hover{
-  box-shadow: -2px 0px 0px 0px $white;
+    box-shadow: -2px 0px 0px 0px $white;
   }
 
   &:active{
@@ -112,6 +114,13 @@
       box-shadow: 0px 2px 0px 0px $pink;
       background-color: #d6d6d6;
       //opacity: 2.0;
+      padding-left: 1rem;
     }
   }
+}
+
+@mixin zoom-in-out-settings {
+  background-color: $pink;
+  padding: 1rem;
+  width: 30%;
 }

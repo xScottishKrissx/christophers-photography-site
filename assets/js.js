@@ -6,14 +6,14 @@ $(document).ready(function() {
 
   //scroll to section process page
   function scrollToAnchor(aid) {
-    var aTag = $("div[name='" + aid + "']");
+    var aTag = $("meta[name='" + aid + "']");
     $('html,body').animate({
       scrollTop: aTag.offset().top
     }, 300);
   }
 
   $(".scroll-to-top-btn").click(function() {
-    scrollToAnchor('top');
+    scrollToAnchor('viewport');
   });
 
 

@@ -17,10 +17,12 @@
           margin-bottom: $standard-seperation;
           min-height: 150px;
           padding: 0;
+          //transition: all 1s;
           //width: 100%;
           &:hover{
-            //box-shadow: 0px 0px 0px 0px black;
-            color: $white;
+            //box-shadow: 0px 0px 5px 0px black;
+            text-decoration: none;
+            h3{padding-left: 2rem !important;}
           }
 
 
@@ -29,26 +31,38 @@
             display: table-cell;
             vertical-align: bottom;
             h3, h4{
-              background-color: rgba(0, 0, 0, 0.5);
+              //background-color: rgba(0, 0, 0, 0.5);
+              background-color: $pink;
               color: $white;
+              display: table-cell;
               //font-size: 3rem;
               height: 4rem;
               margin: 0;
               padding-left: $standard-seperation;
               padding-right: $standard-seperation;
+              vertical-align: middle;
 
             }
-            h3{
-              box-shadow:2px 0px 0px 0px $white;
-              float: left;
+
+            h4{
+              box-shadow:-2px 0px 0px 0px $white;
+              //float: left;
             }
 
           }
         }
-        .category-1-box{}
-        .category-2-box{}
-        .category-3-box{}
-        .category-4-box{}
+        .category-1-box{
+          background-image: url("/assets/category-page/scirocco-1.jpg");
+        }
+        .category-2-box{
+          background-image: url("/assets/category-page/focus.jpg");
+        }
+        .category-3-box{
+          background-image: url("/assets/category-page/exotic-spotting.jpg");
+        }
+        .category-4-box{
+          background-image: url("/assets/category-page/misc.jpg");
+        }
       }
     }
   }

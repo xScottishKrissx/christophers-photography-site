@@ -124,10 +124,18 @@
 
       .glyphicon-zoom-in {
         display: block;
+        @include zoom-in-out-settings;
+        &::after{
+          content:"In";
+        }
       }
 
       .glyphicon-zoom-out {
         display: none;
+        @include zoom-in-out-settings;
+        &::after{
+          content:"Out";
+        }
       }
 
       .expand-image {
@@ -153,6 +161,7 @@
 
         .glyphicon-zoom-in {
           display: none;
+
         }
 
         .glyphicon-zoom-out {

@@ -12,20 +12,31 @@
     min-height: 150px;
     padding: 0; }
     .wrapper .categories-wrapper .col .row a:hover {
-      color: white; }
+      text-decoration: none; }
+      .wrapper .categories-wrapper .col .row a:hover h3 {
+        padding-left: 2rem !important; }
     .wrapper .categories-wrapper .col .row a .category-caption {
       display: table-cell;
       vertical-align: bottom; }
       .wrapper .categories-wrapper .col .row a .category-caption h3, .wrapper .categories-wrapper .col .row a .category-caption h4 {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: #695D4B;
         color: white;
+        display: table-cell;
         height: 4rem;
         margin: 0;
         padding-left: 1rem;
-        padding-right: 1rem; }
-      .wrapper .categories-wrapper .col .row a .category-caption h3 {
-        box-shadow: 2px 0px 0px 0px white;
-        float: left; }
+        padding-right: 1rem;
+        vertical-align: middle; }
+      .wrapper .categories-wrapper .col .row a .category-caption h4 {
+        box-shadow: -2px 0px 0px 0px white; }
+  .wrapper .categories-wrapper .col .row .category-1-box {
+    background-image: url("/assets/category-page/scirocco-1.jpg"); }
+  .wrapper .categories-wrapper .col .row .category-2-box {
+    background-image: url("/assets/category-page/focus.jpg"); }
+  .wrapper .categories-wrapper .col .row .category-3-box {
+    background-image: url("/assets/category-page/exotic-spotting.jpg"); }
+  .wrapper .categories-wrapper .col .row .category-4-box {
+    background-image: url("/assets/category-page/misc.jpg"); }
 
 @media only screen and (min-width: 576px) {
   .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption {
@@ -42,7 +53,6 @@
       font-size: 2.9rem;
       padding-top: 1rem; }
     .wrapper .normal-nav .normal-nav-container .navbar div ul li a {
-      box-shadow: 0 0 0 2px white;
       display: table-cell;
       height: 5rem;
       vertical-align: middle; }
@@ -56,6 +66,8 @@
     box-shadow: 0 0 0 2px white;
     margin-bottom: 0;
     min-height: 300px; }
+  .wrapper .sidebar-1 .sidebar-content:hover {
+    box-shadow: 0px 2px 0px 0px white; }
   .wrapper .page-gallery .row div p {
     font-size: 1.1rem; }
 
@@ -70,10 +82,22 @@
     padding-top: 3rem; }
   .wrapper .slider-area-wrapper {
     height: 500px; }
+  .wrapper .sidebar-1 h2 {
+    font-size: 2rem; }
   .wrapper .sidebar-1 .sidebar-content {
     padding: 0 0 0 0.5rem; }
+    .wrapper .sidebar-1 .sidebar-content h3 {
+      font-size: 2rem; }
+    .wrapper .sidebar-1 .sidebar-content p {
+      font-size: 1.4rem; }
   .wrapper .page-header .row .sub-header .row .col span {
     visibility: visible; }
+  .wrapper .sidebar-1 {
+    padding-top: 1rem; }
+    .wrapper .sidebar-1 .row {
+      margin: 0; }
+      .wrapper .sidebar-1 .row .sidebar-content:hover {
+        box-shadow: -2px 0px 0px 0px white; }
   .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-header .row .col-4 {
     padding-top: 5rem; }
   .wrapper .sidebar-2 {
@@ -100,9 +124,9 @@
   .wrapper {
     max-width: 1300px; }
     .wrapper .slider-area-wrapper {
-      height: 765px; }
+      height: 500px; }
       .wrapper .slider-area-wrapper .carousel-item {
-        height: 765px;
+        height: 500px;
         max-height: inherit; }
     .wrapper .normal-nav .normal-nav-container .navbar div ul {
       right: 3rem; }
@@ -113,24 +137,43 @@
     .wrapper .page-gallery .row div p {
       font-size: 1.6rem; }
     .wrapper .sidebar-1 {
-      padding-top: 3rem; }
+      padding-top: 1rem; }
       .wrapper .sidebar-1 .sidebar-content p {
-        font-size: 2rem; }
+        font-size: 1.5rem; }
     .wrapper .sidebar-2 {
       padding-top: 5rem; }
       .wrapper .sidebar-2 .sidebar-content p {
-        font-size: 2rem; } }
+        font-size: 1.5rem; } }
 @media only screen and (min-width: 1920px) {
   .wrapper {
-    max-width: 1800px; } }
+    max-width: 1800px; }
+    .wrapper .slider-area-wrapper {
+      height: 555px; }
+      .wrapper .slider-area-wrapper .carousel-item {
+        height: 555px;
+        max-height: inherit; }
+    .wrapper .sidebar-1 h2 {
+      font-size: 3.5rem; }
+    .wrapper .sidebar-1 .sidebar-content h3 {
+      font-size: 2.5rem; }
+    .wrapper .sidebar-1 .sidebar-content p {
+      font-size: 2rem; } }
 @media only screen and (min-width: 2560px) {
   .wrapper {
-    max-width: 2300px; } }
+    max-width: 2300px; }
+    .wrapper .slider-area-wrapper {
+      height: 740px; }
+      .wrapper .slider-area-wrapper .carousel-item {
+        height: 740px;
+        max-height: inherit; } }
 @media only screen and (min-width: 3199px) {
   .wrapper {
     max-width: 2800px; }
     .wrapper .normal-nav .normal-nav-container .navbar div ul li a {
       font-size: 3rem; }
+    .wrapper .page-header .row .main-header h5 {
+      font-size: 3.5rem;
+      line-height: 6rem; }
     .wrapper .page-header .row .main-header h4 {
       font-size: 4rem;
       line-height: 6rem; }
@@ -178,6 +221,18 @@
         font-size: 3rem; }
       .wrapper .gallery-link-area-wrapper .sidebar-2 .sidebar-content h5 {
         font-size: 3.5rem; }
+    .wrapper .categories-wrapper .col .row a .category-caption h3 {
+      font-size: 3.5rem; }
+    .wrapper .categories-wrapper .col .row a .category-caption h4 {
+      font-size: 3rem; }
+    .wrapper .page-gallery .row div .click-caption {
+      top: 88%; }
+      .wrapper .page-gallery .row div .click-caption .toggle-caption span {
+        font-size: 3rem; }
+      .wrapper .page-gallery .row div .click-caption .caption-text p {
+        font-size: 3rem; }
+    .wrapper .page-gallery .row .text-box p {
+      font-size: 2.5rem; }
 
   .footer .row div p {
     font-size: 4rem; }

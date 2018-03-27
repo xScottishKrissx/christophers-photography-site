@@ -94,8 +94,11 @@ span {
     .wrapper #showNavLabel .glyphicon {
       left: -3rem;
       transition: left 0.2s; }
-    .wrapper #showNavLabel .header-logo h1 a {
-      color: white; }
+    .wrapper #showNavLabel .header-logo span {
+      margin: 0; }
+      .wrapper #showNavLabel .header-logo span a {
+        color: white;
+        font-size: 2rem; }
   .wrapper .navBar {
     background: #323b44;
     box-shadow: 0 0 0 10px white;
@@ -130,8 +133,10 @@ span {
               box-shadow: 0px 2px 0px 0px;
               background-color: #323b44;
               color: white; }
+          .wrapper .navBar .col ul li a {
+            padding: 2rem; }
           .wrapper .navBar .col ul li:hover {
-            background-color: #ff3d3d; }
+            background-color: #695D4B; }
           .wrapper .navBar .col ul li a:active {
             background-color: white;
             color: #323b44;
@@ -203,7 +208,7 @@ span {
   .wrapper .page-header {
     padding-top: 0rem; }
     .wrapper .page-header .row {
-      background-color: #ff3d3d;
+      background-color: #695D4B;
       margin: 0; }
       .wrapper .page-header .row div {
         color: white;
@@ -303,21 +308,24 @@ span {
             .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption .caption-button a:hover {
               text-decoration: underline; }
     .wrapper .slider-area-wrapper .slider-image-1 {
-      background-image: url("/assets/1.jpg"); }
+      background-image: url("/assets/slider/glasgow-1.jpg"); }
     .wrapper .slider-area-wrapper .slider-image-2 {
-      background-image: url("/assets/1.jpg"); }
+      background-image: url("/assets/slider/levengrove-1.jpg"); }
     .wrapper .slider-area-wrapper .slider-image-3 {
-      background-image: url("/assets/1.jpg"); }
+      background-image: url("/assets/slider/aberfoyle-1.jpg"); }
   .wrapper .sidebar-1 {
     background-color: #323b44;
     box-shadow: 0px 0px 0px 2px white;
     color: white;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    padding-top: 1rem; }
+    .wrapper .sidebar-1 .row {
+      margin: 0; }
     .wrapper .sidebar-1 .sidebar-content {
       cursor: pointer;
       padding: 1rem;
       transition: box-shadow 0.5s; }
-      .wrapper .sidebar-1 .sidebar-content p {
+      .wrapper .sidebar-1 .sidebar-content p, .wrapper .sidebar-1 .sidebar-content h5 {
         color: rgba(255, 255, 255, 0.55); }
       .wrapper .sidebar-1 .sidebar-content:hover {
         box-shadow: -2px 0px 0px 0px white; }
@@ -328,9 +336,8 @@ span {
       background-color: #323b44;
       border: none;
       color: #777777;
-      font-size: 4rem;
+      font-size: 2rem;
       float: right;
-      height: 4rem;
       margin-bottom: 1rem;
       text-align: center;
       width: 100%;
@@ -348,14 +355,14 @@ span {
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-header .row .col-4 {
         padding-top: 3rem; }
     .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link {
-      background-color: #ff3d3d;
+      background-color: #695D4B;
       box-shadow: 0 0 0 2px white;
       color: white;
       padding-top: 1rem;
       width: 150px;
       transition: background-color 0.5s linear; }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link span {
-        background-color: #ff3d3d;
+        background-color: #695D4B;
         border: none;
         color: rgba(255, 255, 255, 0.5);
         font-size: 2rem;
@@ -365,9 +372,10 @@ span {
         width: 100%;
         transition: all .2s linear; }
         .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link span:hover {
-          color: #ff3d3d;
-          box-shadow: 0px 2px 0px 0px #ff3d3d;
-          background-color: #d6d6d6; }
+          color: #695D4B;
+          box-shadow: 0px 2px 0px 0px #695D4B;
+          background-color: #d6d6d6;
+          padding-left: 1rem; }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link:hover {
         background-color: #d6d6d6;
         color: #323b44;
@@ -381,15 +389,35 @@ span {
         background-image: url("/assets/1.jpg");
         height: 275px;
         max-height: 100%; }
+      .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-1 {
+        background-image: url("assets/index-gallery/simba.jpg"); }
+      .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-2 {
+        background-image: url("assets/index-gallery/firhill.jpg"); }
+      .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-3 {
+        background-image: url("assets/index-gallery/dumbarton-rock.jpg"); }
+      .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-4 {
+        background-image: url("assets/index-gallery/clyde.jpg"); }
+      .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-5 {
+        background-image: url("assets/index-gallery/faslane.jpg"); }
+      .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-6 {
+        background-image: url("assets/index-gallery/robert-the-bruce-guts.jpg"); }
+      .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-7 {
+        background-image: url("assets/index-gallery/levengrove-war-monument.jpg"); }
+      .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-8 {
+        background-image: url("assets/index-gallery/hypertrax.jpg"); }
+      .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-9 {
+        background-image: url("assets/index-gallery/nitshill.jpg"); }
     .wrapper .gallery-link-area-wrapper .sidebar-2 {
       background-color: #323b44;
       box-shadow: 0px 0px 0px 2px white;
       color: white; }
+      .wrapper .gallery-link-area-wrapper .sidebar-2 .row {
+        margin: 0; }
       .wrapper .gallery-link-area-wrapper .sidebar-2 .sidebar-content {
         cursor: pointer;
         padding: 1rem;
         transition: box-shadow 0.5s; }
-        .wrapper .gallery-link-area-wrapper .sidebar-2 .sidebar-content p {
+        .wrapper .gallery-link-area-wrapper .sidebar-2 .sidebar-content p, .wrapper .gallery-link-area-wrapper .sidebar-2 .sidebar-content h5 {
           color: rgba(255, 255, 255, 0.55); }
         .wrapper .gallery-link-area-wrapper .sidebar-2 .sidebar-content:hover {
           box-shadow: -2px 0px 0px 0px white; }
@@ -400,9 +428,8 @@ span {
         background-color: #323b44;
         border: none;
         color: #777777;
-        font-size: 4rem;
+        font-size: 2rem;
         float: right;
-        height: 4rem;
         margin-bottom: 1rem;
         text-align: center;
         width: 100%;
@@ -439,7 +466,7 @@ span {
       background-image: url("/assets/social-media/blog.png"); }
 
 .scroll-to-top-btn {
-  background-color: #ff3d3d;
+  background-color: #695D4B;
   bottom: 0;
   color: white;
   font-size: 2rem;
@@ -471,7 +498,6 @@ span {
       font-size: 2.9rem;
       padding-top: 1rem; }
     .wrapper .normal-nav .normal-nav-container .navbar div ul li a {
-      box-shadow: 0 0 0 2px white;
       display: table-cell;
       height: 5rem;
       vertical-align: middle; }
@@ -485,6 +511,8 @@ span {
     box-shadow: 0 0 0 2px white;
     margin-bottom: 0;
     min-height: 300px; }
+  .wrapper .sidebar-1 .sidebar-content:hover {
+    box-shadow: 0px 2px 0px 0px white; }
   .wrapper .page-gallery .row div p {
     font-size: 1.1rem; }
 
@@ -499,10 +527,22 @@ span {
     padding-top: 3rem; }
   .wrapper .slider-area-wrapper {
     height: 500px; }
+  .wrapper .sidebar-1 h2 {
+    font-size: 2rem; }
   .wrapper .sidebar-1 .sidebar-content {
     padding: 0 0 0 0.5rem; }
+    .wrapper .sidebar-1 .sidebar-content h3 {
+      font-size: 2rem; }
+    .wrapper .sidebar-1 .sidebar-content p {
+      font-size: 1.4rem; }
   .wrapper .page-header .row .sub-header .row .col span {
     visibility: visible; }
+  .wrapper .sidebar-1 {
+    padding-top: 1rem; }
+    .wrapper .sidebar-1 .row {
+      margin: 0; }
+      .wrapper .sidebar-1 .row .sidebar-content:hover {
+        box-shadow: -2px 0px 0px 0px white; }
   .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-header .row .col-4 {
     padding-top: 5rem; }
   .wrapper .sidebar-2 {
@@ -529,9 +569,9 @@ span {
   .wrapper {
     max-width: 1300px; }
     .wrapper .slider-area-wrapper {
-      height: 765px; }
+      height: 500px; }
       .wrapper .slider-area-wrapper .carousel-item {
-        height: 765px;
+        height: 500px;
         max-height: inherit; }
     .wrapper .normal-nav .normal-nav-container .navbar div ul {
       right: 3rem; }
@@ -542,24 +582,43 @@ span {
     .wrapper .page-gallery .row div p {
       font-size: 1.6rem; }
     .wrapper .sidebar-1 {
-      padding-top: 3rem; }
+      padding-top: 1rem; }
       .wrapper .sidebar-1 .sidebar-content p {
-        font-size: 2rem; }
+        font-size: 1.5rem; }
     .wrapper .sidebar-2 {
       padding-top: 5rem; }
       .wrapper .sidebar-2 .sidebar-content p {
-        font-size: 2rem; } }
+        font-size: 1.5rem; } }
 @media only screen and (min-width: 1920px) {
   .wrapper {
-    max-width: 1800px; } }
+    max-width: 1800px; }
+    .wrapper .slider-area-wrapper {
+      height: 555px; }
+      .wrapper .slider-area-wrapper .carousel-item {
+        height: 555px;
+        max-height: inherit; }
+    .wrapper .sidebar-1 h2 {
+      font-size: 3.5rem; }
+    .wrapper .sidebar-1 .sidebar-content h3 {
+      font-size: 2.5rem; }
+    .wrapper .sidebar-1 .sidebar-content p {
+      font-size: 2rem; } }
 @media only screen and (min-width: 2560px) {
   .wrapper {
-    max-width: 2300px; } }
+    max-width: 2300px; }
+    .wrapper .slider-area-wrapper {
+      height: 740px; }
+      .wrapper .slider-area-wrapper .carousel-item {
+        height: 740px;
+        max-height: inherit; } }
 @media only screen and (min-width: 3199px) {
   .wrapper {
     max-width: 2800px; }
     .wrapper .normal-nav .normal-nav-container .navbar div ul li a {
       font-size: 3rem; }
+    .wrapper .page-header .row .main-header h5 {
+      font-size: 3.5rem;
+      line-height: 6rem; }
     .wrapper .page-header .row .main-header h4 {
       font-size: 4rem;
       line-height: 6rem; }
@@ -607,6 +666,18 @@ span {
         font-size: 3rem; }
       .wrapper .gallery-link-area-wrapper .sidebar-2 .sidebar-content h5 {
         font-size: 3.5rem; }
+    .wrapper .categories-wrapper .col .row a .category-caption h3 {
+      font-size: 3.5rem; }
+    .wrapper .categories-wrapper .col .row a .category-caption h4 {
+      font-size: 3rem; }
+    .wrapper .page-gallery .row div .click-caption {
+      top: 88%; }
+      .wrapper .page-gallery .row div .click-caption .toggle-caption span {
+        font-size: 3rem; }
+      .wrapper .page-gallery .row div .click-caption .caption-text p {
+        font-size: 3rem; }
+    .wrapper .page-gallery .row .text-box p {
+      font-size: 2.5rem; }
 
   .footer .row div p {
     font-size: 4rem; }

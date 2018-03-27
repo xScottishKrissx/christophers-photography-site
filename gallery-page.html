@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <!-- Required meta tags -->
@@ -11,24 +11,29 @@
   <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/gallery-page-styles.css">
+  <link rel="shortcut ico" href="favicon.ico">
   <title>CPS-Gallery-Scirocco</title>
 </head>
 <!-- Start server on Port:4000 ctrl+alt4 , stop server ctrl+alt+q -->
 
 <body>
-  <div class="wrapper col" name="top">
+  <div class="wrapper col">
 
     <!--- nav -->
     <div class="mobile-nav">
-      <input type="checkbox" id="toggle-1">
-      <label id="showNavLabel" for="toggle-1">
-
-          <div class="row">
+      <input type="checkbox" id="toggle-1" class="toggle-1">
+      <div class="row">
+        <label id="showNavLabel" for="toggle-1" class="row">
             <span class="col-2 showNavIcon glyphicon glyphicon-th-list "></span>
-            <div class="col-10 header-logo"><h1><a href="index.html">christophers photography site</a></h1></div>
-          </div>
 
+            <span class="col-10 header-logo">
+              <span>
+                <a href="index.html">christophers photography site</a>
+              </span>
+            </span>
         </label>
+      </div>
+
       <div class="nav-wrapper">
         <div class="navBar">
           <div class="col">
@@ -40,18 +45,17 @@
               <li><a class="" href="#">Magna deserunt</a></li>
               <li><a class="" href="#">Cillum nostrud</a></li>
               <li><a class="" href="#">Excepteur aliquip</a></li>
-              <li><a class="" href="#footer">Laborum estl</a></li>
+              <li><a class="" href="#">Laborum estl</a></li>
             </ul>
           </div>
 
-
         </div>
-
       </div>
+
     </div>
 
 
-    <!--------------------------- Normal Nav ------------------------------------>
+
     <div class="normal-nav row">
 
       <div class="col-md-4 col-lg-6 brand">
@@ -97,7 +101,7 @@
         </nav>
       </div>
     </div>
-    <!---------------------------- Page-Header---------------------------------->
+
     <div class="page-header">
       <div class="row">
         <div class="col-12 col-md-4 main-header">
@@ -114,6 +118,11 @@
               <h3>1 Day Ago</h3>
             </div>
 
+            <div class="col col-12 col-sm-6 col-md-3">
+              <h4>Items in Gallery :</h4>
+              <h3>10</h3>
+            </div>
+
             <div class="col col-12 col-sm-6 col-md-4">
               <h4>Tags</h4>
               <a href="categories.html">Autmotive</a>
@@ -121,23 +130,13 @@
               <a href="gallery-page.html">Scirocco</a>
             </div>
 
-            <div class="col col-12 col-sm-6 col-md-3">
-              <h4>Items in Gallery :<h4> <h3>10</h3>
-            </div>
-
-
-
           </div>
-
         </div>
+
       </div>
     </div>
 
 
-
-
-
-    <!---------------------------- Page-Gallery --------------------------------->
     <div class="page-gallery">
 
       <div class="row">
@@ -170,9 +169,14 @@
         <div class="col-12 col-md-3 box-4">4</div>
         <div class="col-12 col-md-3 box-5 text-box">
 
-          <p>One of the first times I really took the rocco for a long drive was a trip to Aberfoyle. The majority of the 35 mile journey there is nothing but national speed limit roads and it was the first time I really "loved" driving.
+          <p>One of the first times I really took the rocco for a long drive was
+            a trip to Aberfoyle. The majority of the 35 mile journey there is
+            nothing but national speed limit roads and it was the first time I
+            really "loved" driving.
           </p>
-          <p> Not stuck doing 30 next to a school but foot down, doing corners at 60mph, holding on for dear life. That's more of a remark on me and my driving than the car's handling. That was brilliant.</p>
+          <p> Not stuck doing 30 next to a school but foot down, doing corners
+            at 60mph, holding on for dear life. That's more of a remark on me
+            and my driving than the car's handling. That was brilliant.</p>
         </div>
         <div class="col-12 col-md-6 box-6">6</div>
       </div>
@@ -181,8 +185,8 @@
         <div class="col-12 col-md-6 box-7">7</div>
         <div class="col-6 col-md-3 box-8">
           <div class="expand-caption">
-            <span class="glyphicon glyphicon-zoom-in">Expand</span>
-            <span class="glyphicon glyphicon-zoom-out">Expand</span>
+            <span class="glyphicon glyphicon-zoom-in">Zoom-</span>
+            <span class="glyphicon glyphicon-zoom-out">Zoom-</span>
           </div>
         </div>
         <div class="col-6 col-md-3 box-9">9</div>
@@ -194,7 +198,7 @@
 
     </div>
 
-    <!---------------------------- Footer ---------------------------------------->
+
     <div class="footer">
       <div class="row">
         <div class="col-12">
@@ -216,20 +220,14 @@
   </div>
 
 
-
-
-
-
-
-
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- Touch Swipe -->
-  <script type="text/javascript" src="assets/jquery.touchSwipe.min.js"></script>
-  <script src="assets/js.js" type="text/javascript"></script>
+  <script src="assets/jquery.touchSwipe.min.js"></script>
+  <script src="assets/js.js"></script>
 
 </body>
 
