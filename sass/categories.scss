@@ -12,7 +12,7 @@
       //@include default-nav-link-styles;
         a{
           @include background-image-cover;
-          background-image: url("/assets/1.jpg");
+          background-image: url("../assets/1.jpg");
           display: table;
           margin-bottom: $standard-seperation;
           min-height: 150px;
@@ -51,35 +51,24 @@
 
           }
         }
+/*****************************************************************************/
+///////////////////////////////// IMAGES //////////////////////////////////////
+/*****************************************************************************/
         .category-1-box{
-          background-image: url("/assets/category-page/scirocco-1.jpg");
+          background-image: url("../assets/category-page/scirocco-1.jpg");
         }
         .category-2-box{
-          background-image: url("/assets/category-page/focus.jpg");
+          background-image: url("../assets/category-page/focus.jpg");
         }
         .category-3-box{
-          background-image: url("/assets/category-page/exotic-spotting.jpg");
+          background-image: url("../assets/category-page/exotic-spotting.jpg");
         }
         .category-4-box{
-          background-image: url("/assets/category-page/misc.jpg");
+          background-image: url("../assets/category-page/misc.jpg");
         }
       }
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @import "_media-queries.scss";

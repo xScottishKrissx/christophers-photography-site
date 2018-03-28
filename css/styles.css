@@ -31,6 +31,9 @@ p,
 span {
   font-family: "Lato", sans-serif; }
 
+.disabled {
+  color: #6c757d !important; }
+
 .wrapper {
   background-color: white;
   max-width: 1024px;
@@ -159,7 +162,7 @@ span {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/assets/header.jpg");
+    background-image: url("../assets/header.jpg");
     background-position: bottom;
     display: none;
     height: 40vh;
@@ -308,11 +311,11 @@ span {
             .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption .caption-button a:hover {
               text-decoration: underline; }
     .wrapper .slider-area-wrapper .slider-image-1 {
-      background-image: url("/assets/slider/glasgow-1.jpg"); }
+      background-image: url("../assets/slider/glasgow-1.jpg"); }
     .wrapper .slider-area-wrapper .slider-image-2 {
-      background-image: url("/assets/slider/levengrove-1.jpg"); }
+      background-image: url("../assets/slider/levengrove-1.jpg"); }
     .wrapper .slider-area-wrapper .slider-image-3 {
-      background-image: url("/assets/slider/aberfoyle-1.jpg"); }
+      background-image: url("../assets/slider/aberfoyle-1.jpg"); }
   .wrapper .sidebar-1 {
     background-color: #323b44;
     box-shadow: 0px 0px 0px 2px white;
@@ -386,27 +389,27 @@ span {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-image: url("/assets/1.jpg");
+        background-image: url("../assets/1.jpg");
         height: 275px;
         max-height: 100%; }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-1 {
-        background-image: url("assets/index-gallery/simba.jpg"); }
+        background-image: url("../assets/index-gallery/simba.jpg"); }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-2 {
-        background-image: url("assets/index-gallery/firhill.jpg"); }
+        background-image: url("../assets/index-gallery/firhill.jpg"); }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-3 {
-        background-image: url("assets/index-gallery/dumbarton-rock.jpg"); }
+        background-image: url("../assets/index-gallery/dumbarton-rock.jpg"); }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-4 {
-        background-image: url("assets/index-gallery/clyde.jpg"); }
+        background-image: url("../assets/index-gallery/clyde.jpg"); }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-5 {
-        background-image: url("assets/index-gallery/faslane.jpg"); }
+        background-image: url("../assets/index-gallery/faslane.jpg"); }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-6 {
-        background-image: url("assets/index-gallery/robert-the-bruce-guts.jpg"); }
+        background-image: url("../assets/index-gallery/robert-the-bruce-guts.jpg"); }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-7 {
-        background-image: url("assets/index-gallery/levengrove-war-monument.jpg"); }
+        background-image: url("../assets/index-gallery/levengrove-war-monument.jpg"); }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-8 {
-        background-image: url("assets/index-gallery/hypertrax.jpg"); }
+        background-image: url("../assets/index-gallery/hypertrax.jpg"); }
       .wrapper .gallery-link-area-wrapper .gallery-links-container .gallery-link .image-9 {
-        background-image: url("assets/index-gallery/nitshill.jpg"); }
+        background-image: url("../assets/index-gallery/nitshill.jpg"); }
     .wrapper .gallery-link-area-wrapper .sidebar-2 {
       background-color: #323b44;
       box-shadow: 0px 0px 0px 2px white;
@@ -458,12 +461,12 @@ span {
       background-size: cover;
       min-height: 50px; }
     .footer .row div .row .twitter {
-      background-image: url("/assets/social-media/twitter.png"); }
+      background-image: url("../assets/social-media/twitter.png"); }
     .footer .row div .row .gmail {
-      background-image: url("/assets/social-media/gmail.png"); }
+      background-image: url("../assets/social-media/gmail.png"); }
     .footer .row div .row .blog {
       background-color: white;
-      background-image: url("/assets/social-media/blog.png"); }
+      background-image: url("../assets/social-media/blog.png"); }
 
 .scroll-to-top-btn {
   background-color: #695D4B;

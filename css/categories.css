@@ -2,41 +2,44 @@
   margin: 0;
   padding: 0;
   width: 100%; }
-  .wrapper .categories-wrapper .col .row a {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("/assets/1.jpg");
-    display: table;
-    margin-bottom: 1rem;
-    min-height: 150px;
-    padding: 0; }
-    .wrapper .categories-wrapper .col .row a:hover {
-      text-decoration: none; }
-      .wrapper .categories-wrapper .col .row a:hover h3 {
-        padding-left: 2rem !important; }
-    .wrapper .categories-wrapper .col .row a .category-caption {
-      display: table-cell;
-      vertical-align: bottom; }
-      .wrapper .categories-wrapper .col .row a .category-caption h3, .wrapper .categories-wrapper .col .row a .category-caption h4 {
-        background-color: #695D4B;
-        color: white;
+  .wrapper .categories-wrapper .col .row {
+    /*****************************************************************************/
+    /*****************************************************************************/ }
+    .wrapper .categories-wrapper .col .row a {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("../assets/1.jpg");
+      display: table;
+      margin-bottom: 1rem;
+      min-height: 150px;
+      padding: 0; }
+      .wrapper .categories-wrapper .col .row a:hover {
+        text-decoration: none; }
+        .wrapper .categories-wrapper .col .row a:hover h3 {
+          padding-left: 2rem !important; }
+      .wrapper .categories-wrapper .col .row a .category-caption {
         display: table-cell;
-        height: 4rem;
-        margin: 0;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        vertical-align: middle; }
-      .wrapper .categories-wrapper .col .row a .category-caption h4 {
-        box-shadow: -2px 0px 0px 0px white; }
-  .wrapper .categories-wrapper .col .row .category-1-box {
-    background-image: url("/assets/category-page/scirocco-1.jpg"); }
-  .wrapper .categories-wrapper .col .row .category-2-box {
-    background-image: url("/assets/category-page/focus.jpg"); }
-  .wrapper .categories-wrapper .col .row .category-3-box {
-    background-image: url("/assets/category-page/exotic-spotting.jpg"); }
-  .wrapper .categories-wrapper .col .row .category-4-box {
-    background-image: url("/assets/category-page/misc.jpg"); }
+        vertical-align: bottom; }
+        .wrapper .categories-wrapper .col .row a .category-caption h3, .wrapper .categories-wrapper .col .row a .category-caption h4 {
+          background-color: #695D4B;
+          color: white;
+          display: table-cell;
+          height: 4rem;
+          margin: 0;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          vertical-align: middle; }
+        .wrapper .categories-wrapper .col .row a .category-caption h4 {
+          box-shadow: -2px 0px 0px 0px white; }
+    .wrapper .categories-wrapper .col .row .category-1-box {
+      background-image: url("../assets/category-page/scirocco-1.jpg"); }
+    .wrapper .categories-wrapper .col .row .category-2-box {
+      background-image: url("../assets/category-page/focus.jpg"); }
+    .wrapper .categories-wrapper .col .row .category-3-box {
+      background-image: url("../assets/category-page/exotic-spotting.jpg"); }
+    .wrapper .categories-wrapper .col .row .category-4-box {
+      background-image: url("../assets/category-page/misc.jpg"); }
 
 @media only screen and (min-width: 576px) {
   .wrapper .slider-area-wrapper .carousel-item .container .carousel-caption {
